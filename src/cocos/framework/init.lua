@@ -33,11 +33,15 @@ device     = require("cocos.framework.device")
 display    = require("cocos.framework.display")
 audio      = require("cocos.framework.audio")
 transition = require("cocos.framework.transition")
+network = require("cocos.framework.network")
+crypto = require("cocos.framework.crypto")
 
+require("cocos.framework.debug")
 require("cocos.framework.extends.NodeEx")
 require("cocos.framework.extends.SpriteEx")
 require("cocos.framework.extends.LayerEx")
 require("cocos.framework.extends.MenuEx")
+
 
 if ccui then
 require("cocos.framework.extends.UIWidget")

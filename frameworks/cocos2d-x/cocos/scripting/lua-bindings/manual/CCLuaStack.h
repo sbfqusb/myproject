@@ -33,6 +33,8 @@ extern "C" {
 #include "cocos2d.h"
 #include "CCLuaValue.h"
 
+#define LUASTACK_USED_FOR_QUICK_COCOS2DX
+
 /**
  * @addtogroup lua
  * @{
@@ -292,6 +294,9 @@ public:
      * @return return true if current _callFromLua of LuaStack is not equal to 0 otherwise return false.
      */
     virtual bool handleAssert(const char *msg);
+
+    virtual const char *getXXTEAKey(int *len);
+    virtual const char *getXXTEASign(int *len);
     
     /**
      * Set the key and sign for xxtea encryption algorithm.
