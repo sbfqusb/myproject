@@ -36,7 +36,7 @@
 #if (CC_CODE_IDE_DEBUG_SUPPORT > 0)
 #define SIMULATOR_WITH_CONSOLE_AND_MENU 1
 #else
-#define SIMULATOR_WITH_CONSOLE_AND_MENU 0
+#define SIMULATOR_WITH_CONSOLE_AND_MENU 1
 #endif
 
 USING_NS_CC;
@@ -235,6 +235,11 @@ int SimulatorWin::run()
         s.assign(ws.begin(), ws.end());
         args.push_back(s);
     }
+	if (args.size()<2)
+	{
+		args = { getApplicationPath()+"myproject.exe","-workdir",getApplicationPath()+"/../../" };
+		string apppath = getApplicationPath().c_str();
+	}
     _project.parseCommandLine(args);
 
     if (_project.getProjectDir().empty())
@@ -604,6 +609,12 @@ void SimulatorWin::parseCocosProjectConfig(ProjectConfig &config)
         s.assign(ws.begin(), ws.end());
         args.push_back(s);
     }
+
+	if (args.size()<2)
+	{
+		args = { getApplicationPath() + "myproject.exe","-workdir",getApplicationPath() + "/../../" };
+		string apppath = getApplicationPath().c_str();
+	}
 
     if (args.size() >= 2)
     {
