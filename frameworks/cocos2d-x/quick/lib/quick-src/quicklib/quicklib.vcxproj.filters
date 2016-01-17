@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="extra">
+      <UniqueIdentifier>{145ef585-933b-4e01-a179-71921213e8b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua_extensions">
+      <UniqueIdentifier>{5961f998-fb93-45bc-aee5-a8459f2c438c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra\apptools">
+      <UniqueIdentifier>{f7471f76-2e73-42e7-9763-994b6bc90901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra\crypto">
+      <UniqueIdentifier>{c16e8302-7018-439f-a6d9-1eca89144c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra\luabinding">
+      <UniqueIdentifier>{acc720e0-365b-4a1e-b16c-39b90b8306ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra\nanovg">
+      <UniqueIdentifier>{f11d3980-cf46-4550-90ae-eea039387fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra\native">
+      <UniqueIdentifier>{824229fe-5c28-4724-8d98-961f06feb075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra\network">
+      <UniqueIdentifier>{ade2af32-3458-479e-bd25-442a730ad53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extra\platform">
+      <UniqueIdentifier>{7eaaf849-b36f-42c5-b6ad-69242a07ca9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua_extensions\cjson">
+      <UniqueIdentifier>{ee137955-9e52-431f-9417-1e7320f26f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua_extensions\debugger">
+      <UniqueIdentifier>{66e96bab-4f53-4054-92d2-470dd4b7d6b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua_extensions\filesystem">
+      <UniqueIdentifier>{072ae2c2-f5f4-4891-afda-bfa9f5f82ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua_extensions\lpack">
+      <UniqueIdentifier>{a7b2b514-850f-4bc4-bb17-7376cde8ec5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua_extensions\lsqlite3">
+      <UniqueIdentifier>{5ab6177a-2afe-478d-b6d6-17db9793d8b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua_extensions\zlib">
+      <UniqueIdentifier>{0584bf26-d7bb-45fb-af2a-9c8c2fd22b1f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\extra\cocos2dx_extra.h">
+      <Filter>extra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\apptools\HelperFunc.h">
+      <Filter>extra\apptools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\crypto\base64\libbase64.h">
+      <Filter>extra\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\crypto\md5\md5.h">
+      <Filter>extra\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\crypto\CCCrypto.h">
+      <Filter>extra\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\luabinding\cocos2dx_extra_luabinding.h">
+      <Filter>extra\luabinding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\luabinding\HelperFunc_luabinding.h">
+      <Filter>extra\luabinding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\luabinding\lua_cocos2dx_extension_nanovg_auto.hpp">
+      <Filter>extra\luabinding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\luabinding\lua_cocos2dx_extension_nanovg_manual.hpp">
+      <Filter>extra\luabinding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\nanovg\nanonode\NVGDrawNode.h">
+      <Filter>extra\nanovg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\nanovg\nanonode\NVGNode.h">
+      <Filter>extra\nanovg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\nanovg\nanovg\fontstash.h">
+      <Filter>extra\nanovg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\nanovg\nanovg\nanovg.h">
+      <Filter>extra\nanovg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\nanovg\nanovg\nanovg_gl.h">
+      <Filter>extra\nanovg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\nanovg\nanovg\nanovg_gl_utils.h">
+      <Filter>extra\nanovg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\nanovg\nanovg\stb_image.h">
+      <Filter>extra\nanovg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\nanovg\nanovg\stb_truetype.h">
+      <Filter>extra\nanovg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\native\CCAlertViewDelegate.h">
+      <Filter>extra\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\native\CCNative.h">
+      <Filter>extra\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\network\CCHTTPRequest.h">
+      <Filter>extra\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\network\CCHTTPRequestDelegate.h">
+      <Filter>extra\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\network\CCNetwork.h">
+      <Filter>extra\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\platform\win32\CCNativeWin32.h">
+      <Filter>extra\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\extra\platform\win32\CCNativeWin32def.h">
+      <Filter>extra\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\lua_extensions_more.h">
+      <Filter>lua_extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\cjson\fpconv.h">
+      <Filter>lua_extensions\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\cjson\lua_cjson.h">
+      <Filter>lua_extensions\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\cjson\strbuf.h">
+      <Filter>lua_extensions\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\debugger\debugger.h">
+      <Filter>lua_extensions\debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\filesystem\lfs.h">
+      <Filter>lua_extensions\filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\lpack\lpack.h">
+      <Filter>lua_extensions\lpack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\lsqlite3\lsqlite3.h">
+      <Filter>lua_extensions\lsqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\lsqlite3\sqlite3.h">
+      <Filter>lua_extensions\lsqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lua_extensions\zlib\lua_zlib.h">
+      <Filter>lua_extensions\zlib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\extra\apptools\HelperFunc.cpp">
+      <Filter>extra\apptools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\crypto\base64\libbase64.c">
+      <Filter>extra\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\crypto\md5\md5.c">
+      <Filter>extra\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\crypto\CCCrypto.cpp">
+      <Filter>extra\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\luabinding\cocos2dx_extra_luabinding.cpp">
+      <Filter>extra\luabinding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\luabinding\HelperFunc_luabinding.cpp">
+      <Filter>extra\luabinding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\luabinding\lua_cocos2dx_extension_nanovg_auto.cpp">
+      <Filter>extra\luabinding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\luabinding\lua_cocos2dx_extension_nanovg_manual.cpp">
+      <Filter>extra\luabinding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\nanovg\nanonode\NVGDrawNode.cpp">
+      <Filter>extra\nanovg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\nanovg\nanonode\NVGNode.cpp">
+      <Filter>extra\nanovg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\nanovg\nanovg\nanovg.c">
+      <Filter>extra\nanovg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\network\CCHTTPRequest.cpp">
+      <Filter>extra\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\network\CCNetwork.cpp">
+      <Filter>extra\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\platform\win32\CCCryptoWin32.cpp">
+      <Filter>extra\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\platform\win32\CCNative.cpp">
+      <Filter>extra\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\platform\win32\CCNativeWin32.cpp">
+      <Filter>extra\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\extra\platform\win32\CCNetworkWin32.cpp">
+      <Filter>extra\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\lua_extensions_more.c">
+      <Filter>lua_extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\cjson\fpconv.c">
+      <Filter>lua_extensions\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\cjson\lua_cjson.c">
+      <Filter>lua_extensions\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\cjson\strbuf.c">
+      <Filter>lua_extensions\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\debugger\debugger.c">
+      <Filter>lua_extensions\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\filesystem\lfs.c">
+      <Filter>lua_extensions\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\lpack\lpack.c">
+      <Filter>lua_extensions\lpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\lsqlite3\lsqlite3.c">
+      <Filter>lua_extensions\lsqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\lsqlite3\sqlite3.c">
+      <Filter>lua_extensions\lsqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua_extensions\zlib\lua_zlib.c">
+      <Filter>lua_extensions\zlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
