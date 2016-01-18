@@ -49,6 +49,54 @@
 		5200BECA1A53D9A500AC45E4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5200BEC91A53D9A500AC45E4 /* Security.framework */; };
 		521A8E7019F0C3D200D177D7 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6E19F0C3D200D177D7 /* Default-667h@2x.png */; };
 		521A8E7119F0C3D200D177D7 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A8E6F19F0C3D200D177D7 /* Default-736h@3x.png */; };
+		72220E031C4CFD14007C4B53 /* HelperFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220D0E1C4CFD14007C4B53 /* HelperFunc.cpp */; };
+		72220E041C4CFD14007C4B53 /* libbase64.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220D131C4CFD14007C4B53 /* libbase64.c */; };
+		72220E051C4CFD14007C4B53 /* CCCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220D151C4CFD14007C4B53 /* CCCrypto.cpp */; };
+		72220E061C4CFD14007C4B53 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220D181C4CFD14007C4B53 /* md5.c */; };
+		72220E371C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220D811C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.cpp */; };
+		72220E381C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.tolua in Resources */ = {isa = PBXBuildFile; fileRef = 72220D831C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.tolua */; };
+		72220E391C4CFD14007C4B53 /* cocos2dx_extra_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220D841C4CFD14007C4B53 /* cocos2dx_extra_luabinding.cpp */; };
+		72220E3A1C4CFD14007C4B53 /* cocos2dx_extra_luabinding.tolua in Resources */ = {isa = PBXBuildFile; fileRef = 72220D861C4CFD14007C4B53 /* cocos2dx_extra_luabinding.tolua */; };
+		72220E3B1C4CFD14007C4B53 /* HelperFunc_luabinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220D871C4CFD14007C4B53 /* HelperFunc_luabinding.cpp */; };
+		72220E3C1C4CFD14007C4B53 /* HelperFunc_luabinding.tolua in Resources */ = {isa = PBXBuildFile; fileRef = 72220D891C4CFD14007C4B53 /* HelperFunc_luabinding.tolua */; };
+		72220E3E1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220D8C1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_auto.cpp */; };
+		72220E3F1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_manual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220D8E1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_manual.cpp */; };
+		72220E401C4CFD14007C4B53 /* NVGDrawNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220D921C4CFD14007C4B53 /* NVGDrawNode.cpp */; };
+		72220E411C4CFD14007C4B53 /* NVGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220D941C4CFD14007C4B53 /* NVGNode.cpp */; };
+		72220E421C4CFD14007C4B53 /* nanovg.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220D981C4CFD14007C4B53 /* nanovg.c */; };
+		72220E431C4CFD14007C4B53 /* CCHTTPRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220DA21C4CFD14007C4B53 /* CCHTTPRequest.cpp */; };
+		72220E441C4CFD14007C4B53 /* CCNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220DA51C4CFD14007C4B53 /* CCNetwork.cpp */; };
+		72220E491C4CFD14007C4B53 /* CCCryptoIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DAE1C4CFD14007C4B53 /* CCCryptoIOS.mm */; };
+		72220E4A1C4CFD14007C4B53 /* CCNative.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DAF1C4CFD14007C4B53 /* CCNative.mm */; };
+		72220E4B1C4CFD14007C4B53 /* CCNativeIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DB11C4CFD14007C4B53 /* CCNativeIOS.mm */; };
+		72220E4C1C4CFD14007C4B53 /* CCStore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DB21C4CFD14007C4B53 /* CCStore.mm */; };
+		72220E4D1C4CFD14007C4B53 /* CCStoreIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DB41C4CFD14007C4B53 /* CCStoreIOS.mm */; };
+		72220E4E1C4CFD14007C4B53 /* CCStorePaymentTransactionWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DB51C4CFD14007C4B53 /* CCStorePaymentTransactionWrapper.mm */; };
+		72220E4F1C4CFD14007C4B53 /* CCStoreReceiptVerifyRequestIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DB71C4CFD14007C4B53 /* CCStoreReceiptVerifyRequestIOS.mm */; };
+		72220E501C4CFD14007C4B53 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 72220DBA1C4CFD14007C4B53 /* SBJSON.m */; };
+		72220E511C4CFD14007C4B53 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 72220DBC1C4CFD14007C4B53 /* SBJsonBase.m */; };
+		72220E521C4CFD14007C4B53 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 72220DBE1C4CFD14007C4B53 /* SBJsonParser.m */; };
+		72220E531C4CFD14007C4B53 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 72220DC01C4CFD14007C4B53 /* SBJsonWriter.m */; };
+		72220E541C4CFD14007C4B53 /* OpenUDIDIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 72220DC31C4CFD14007C4B53 /* OpenUDIDIOS.m */; };
+		72220E551C4CFD14007C4B53 /* CCNetworkIOSMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DC51C4CFD14007C4B53 /* CCNetworkIOSMac.mm */; };
+		72220E561C4CFD14007C4B53 /* ReachabilityIOSMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 72220DC71C4CFD14007C4B53 /* ReachabilityIOSMac.m */; };
+		72220E571C4CFD14007C4B53 /* CCCryptoMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DC91C4CFD14007C4B53 /* CCCryptoMac.mm */; };
+		72220E581C4CFD14007C4B53 /* CCNative.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DCA1C4CFD14007C4B53 /* CCNative.mm */; };
+		72220E591C4CFD14007C4B53 /* CCNativeMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72220DCC1C4CFD14007C4B53 /* CCNativeMac.mm */; };
+		72220E5A1C4CFD14007C4B53 /* OpenUDIDMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 72220DCF1C4CFD14007C4B53 /* OpenUDIDMac.m */; };
+		72220E601C4CFD14007C4B53 /* CCStorePaymentTransaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220DDA1C4CFD14007C4B53 /* CCStorePaymentTransaction.cpp */; };
+		72220E611C4CFD14007C4B53 /* CCStoreProduct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72220DDD1C4CFD14007C4B53 /* CCStoreProduct.cpp */; };
+		72220E631C4CFD14007C4B53 /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DE41C4CFD14007C4B53 /* fpconv.c */; };
+		72220E641C4CFD14007C4B53 /* lua_cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DE61C4CFD14007C4B53 /* lua_cjson.c */; };
+		72220E651C4CFD14007C4B53 /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DE81C4CFD14007C4B53 /* strbuf.c */; };
+		72220E661C4CFD14007C4B53 /* debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DEB1C4CFD14007C4B53 /* debugger.c */; };
+		72220E671C4CFD14007C4B53 /* ldt_debugger.lua in Resources */ = {isa = PBXBuildFile; fileRef = 72220DED1C4CFD14007C4B53 /* ldt_debugger.lua */; };
+		72220E681C4CFD14007C4B53 /* lfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DEF1C4CFD14007C4B53 /* lfs.c */; };
+		72220E691C4CFD14007C4B53 /* lpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DF21C4CFD14007C4B53 /* lpack.c */; };
+		72220E6A1C4CFD14007C4B53 /* lsqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DF51C4CFD14007C4B53 /* lsqlite3.c */; };
+		72220E6B1C4CFD14007C4B53 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DF71C4CFD14007C4B53 /* sqlite3.c */; };
+		72220E6C1C4CFD14007C4B53 /* lua_extensions_more.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DF91C4CFD14007C4B53 /* lua_extensions_more.c */; };
+		72220E6D1C4CFD14007C4B53 /* lua_zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 72220DFC1C4CFD14007C4B53 /* lua_zlib.c */; };
 		9FA3AE4E1BE9BCC900FC9645 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA3AE4D1BE9BCC900FC9645 /* CFNetwork.framework */; };
 		9FC760431A67791200D1E6E7 /* lang in Resources */ = {isa = PBXBuildFile; fileRef = 9FC760401A67791200D1E6E7 /* lang */; };
 		9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FC760411A67791200D1E6E7 /* SimpleConfigParser.cpp */; };
@@ -132,6 +180,20 @@
 			remoteGlobalIDString = A07A4C241783777C0073F6A7;
 			remoteInfo = "libcocos2d iOS";
 		};
+		72220E721C4CFD15007C4B53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15A8A4031834BDA200142BE0 /* cocos2d_libs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 507B40FD1C31BDD30067B53E;
+			remoteInfo = "libcocos2d tvOS";
+		};
+		72220E751C4CFD15007C4B53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C03781AE18BF654500FE4F13 /* cocos2d_lua_bindings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 507B43531C31FA0C0067B53E;
+			remoteInfo = "libluacocos2d tvOS";
+		};
 		9FEE0E431A5FC95000FEA1B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FF504781A5E86D600AFDA55 /* libsimulator.xcodeproj */;
@@ -211,6 +273,104 @@
 		5200BEC91A53D9A500AC45E4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		521A8E6E19F0C3D200D177D7 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		521A8E6F19F0C3D200D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		72220D0E1C4CFD14007C4B53 /* HelperFunc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelperFunc.cpp; sourceTree = "<group>"; };
+		72220D0F1C4CFD14007C4B53 /* HelperFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperFunc.h; sourceTree = "<group>"; };
+		72220D101C4CFD14007C4B53 /* cocos2dx_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocos2dx_extra.h; sourceTree = "<group>"; };
+		72220D131C4CFD14007C4B53 /* libbase64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libbase64.c; sourceTree = "<group>"; };
+		72220D141C4CFD14007C4B53 /* libbase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbase64.h; sourceTree = "<group>"; };
+		72220D151C4CFD14007C4B53 /* CCCrypto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCCrypto.cpp; sourceTree = "<group>"; };
+		72220D161C4CFD14007C4B53 /* CCCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCrypto.h; sourceTree = "<group>"; };
+		72220D181C4CFD14007C4B53 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		72220D191C4CFD14007C4B53 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		72220D811C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cocos2dx_extra_ios_iap_luabinding.cpp; sourceTree = "<group>"; };
+		72220D821C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocos2dx_extra_ios_iap_luabinding.h; sourceTree = "<group>"; };
+		72220D831C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.tolua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cocos2dx_extra_ios_iap_luabinding.tolua; sourceTree = "<group>"; };
+		72220D841C4CFD14007C4B53 /* cocos2dx_extra_luabinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cocos2dx_extra_luabinding.cpp; sourceTree = "<group>"; };
+		72220D851C4CFD14007C4B53 /* cocos2dx_extra_luabinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocos2dx_extra_luabinding.h; sourceTree = "<group>"; };
+		72220D861C4CFD14007C4B53 /* cocos2dx_extra_luabinding.tolua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cocos2dx_extra_luabinding.tolua; sourceTree = "<group>"; };
+		72220D871C4CFD14007C4B53 /* HelperFunc_luabinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelperFunc_luabinding.cpp; sourceTree = "<group>"; };
+		72220D881C4CFD14007C4B53 /* HelperFunc_luabinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperFunc_luabinding.h; sourceTree = "<group>"; };
+		72220D891C4CFD14007C4B53 /* HelperFunc_luabinding.tolua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HelperFunc_luabinding.tolua; sourceTree = "<group>"; };
+		72220D8C1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_cocos2dx_extension_nanovg_auto.cpp; sourceTree = "<group>"; };
+		72220D8D1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua_cocos2dx_extension_nanovg_auto.hpp; sourceTree = "<group>"; };
+		72220D8E1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_manual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_cocos2dx_extension_nanovg_manual.cpp; sourceTree = "<group>"; };
+		72220D8F1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_manual.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua_cocos2dx_extension_nanovg_manual.hpp; sourceTree = "<group>"; };
+		72220D921C4CFD14007C4B53 /* NVGDrawNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NVGDrawNode.cpp; sourceTree = "<group>"; };
+		72220D931C4CFD14007C4B53 /* NVGDrawNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVGDrawNode.h; sourceTree = "<group>"; };
+		72220D941C4CFD14007C4B53 /* NVGNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NVGNode.cpp; sourceTree = "<group>"; };
+		72220D951C4CFD14007C4B53 /* NVGNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVGNode.h; sourceTree = "<group>"; };
+		72220D971C4CFD14007C4B53 /* fontstash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontstash.h; sourceTree = "<group>"; };
+		72220D981C4CFD14007C4B53 /* nanovg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nanovg.c; sourceTree = "<group>"; };
+		72220D991C4CFD14007C4B53 /* nanovg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanovg.h; sourceTree = "<group>"; };
+		72220D9A1C4CFD14007C4B53 /* nanovg_gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanovg_gl.h; sourceTree = "<group>"; };
+		72220D9B1C4CFD14007C4B53 /* nanovg_gl_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nanovg_gl_utils.h; sourceTree = "<group>"; };
+		72220D9C1C4CFD14007C4B53 /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		72220D9D1C4CFD14007C4B53 /* stb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_truetype.h; sourceTree = "<group>"; };
+		72220D9F1C4CFD14007C4B53 /* CCAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAlertViewDelegate.h; sourceTree = "<group>"; };
+		72220DA01C4CFD14007C4B53 /* CCNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNative.h; sourceTree = "<group>"; };
+		72220DA21C4CFD14007C4B53 /* CCHTTPRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCHTTPRequest.cpp; sourceTree = "<group>"; };
+		72220DA31C4CFD14007C4B53 /* CCHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHTTPRequest.h; sourceTree = "<group>"; };
+		72220DA41C4CFD14007C4B53 /* CCHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		72220DA51C4CFD14007C4B53 /* CCNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCNetwork.cpp; sourceTree = "<group>"; };
+		72220DA61C4CFD14007C4B53 /* CCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNetwork.h; sourceTree = "<group>"; };
+		72220DAE1C4CFD14007C4B53 /* CCCryptoIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCCryptoIOS.mm; sourceTree = "<group>"; };
+		72220DAF1C4CFD14007C4B53 /* CCNative.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCNative.mm; sourceTree = "<group>"; };
+		72220DB01C4CFD14007C4B53 /* CCNativeIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNativeIOS.h; sourceTree = "<group>"; };
+		72220DB11C4CFD14007C4B53 /* CCNativeIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCNativeIOS.mm; sourceTree = "<group>"; };
+		72220DB21C4CFD14007C4B53 /* CCStore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCStore.mm; sourceTree = "<group>"; };
+		72220DB31C4CFD14007C4B53 /* CCStoreIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStoreIOS.h; sourceTree = "<group>"; };
+		72220DB41C4CFD14007C4B53 /* CCStoreIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCStoreIOS.mm; sourceTree = "<group>"; };
+		72220DB51C4CFD14007C4B53 /* CCStorePaymentTransactionWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCStorePaymentTransactionWrapper.mm; sourceTree = "<group>"; };
+		72220DB61C4CFD14007C4B53 /* CCStoreReceiptVerifyRequestIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStoreReceiptVerifyRequestIOS.h; sourceTree = "<group>"; };
+		72220DB71C4CFD14007C4B53 /* CCStoreReceiptVerifyRequestIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCStoreReceiptVerifyRequestIOS.mm; sourceTree = "<group>"; };
+		72220DB91C4CFD14007C4B53 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		72220DBA1C4CFD14007C4B53 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		72220DBB1C4CFD14007C4B53 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		72220DBC1C4CFD14007C4B53 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		72220DBD1C4CFD14007C4B53 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		72220DBE1C4CFD14007C4B53 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		72220DBF1C4CFD14007C4B53 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		72220DC01C4CFD14007C4B53 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		72220DC21C4CFD14007C4B53 /* OpenUDIDIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDIDIOS.h; sourceTree = "<group>"; };
+		72220DC31C4CFD14007C4B53 /* OpenUDIDIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDIDIOS.m; sourceTree = "<group>"; };
+		72220DC51C4CFD14007C4B53 /* CCNetworkIOSMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCNetworkIOSMac.mm; sourceTree = "<group>"; };
+		72220DC61C4CFD14007C4B53 /* ReachabilityIOSMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityIOSMac.h; sourceTree = "<group>"; };
+		72220DC71C4CFD14007C4B53 /* ReachabilityIOSMac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityIOSMac.m; sourceTree = "<group>"; };
+		72220DC91C4CFD14007C4B53 /* CCCryptoMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCCryptoMac.mm; sourceTree = "<group>"; };
+		72220DCA1C4CFD14007C4B53 /* CCNative.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCNative.mm; sourceTree = "<group>"; };
+		72220DCB1C4CFD14007C4B53 /* CCNativeMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNativeMac.h; sourceTree = "<group>"; };
+		72220DCC1C4CFD14007C4B53 /* CCNativeMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCNativeMac.mm; sourceTree = "<group>"; };
+		72220DCE1C4CFD14007C4B53 /* OpenUDIDMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDIDMac.h; sourceTree = "<group>"; };
+		72220DCF1C4CFD14007C4B53 /* OpenUDIDMac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDIDMac.m; sourceTree = "<group>"; };
+		72220DD91C4CFD14007C4B53 /* CCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStore.h; sourceTree = "<group>"; };
+		72220DDA1C4CFD14007C4B53 /* CCStorePaymentTransaction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCStorePaymentTransaction.cpp; sourceTree = "<group>"; };
+		72220DDB1C4CFD14007C4B53 /* CCStorePaymentTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStorePaymentTransaction.h; sourceTree = "<group>"; };
+		72220DDC1C4CFD14007C4B53 /* CCStorePaymentTransactionWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStorePaymentTransactionWrapper.h; sourceTree = "<group>"; };
+		72220DDD1C4CFD14007C4B53 /* CCStoreProduct.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCStoreProduct.cpp; sourceTree = "<group>"; };
+		72220DDE1C4CFD14007C4B53 /* CCStoreProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStoreProduct.h; sourceTree = "<group>"; };
+		72220DDF1C4CFD14007C4B53 /* CCStoreProductsRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStoreProductsRequestDelegate.h; sourceTree = "<group>"; };
+		72220DE01C4CFD14007C4B53 /* CCStoreTransactionObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStoreTransactionObserver.h; sourceTree = "<group>"; };
+		72220DE41C4CFD14007C4B53 /* fpconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fpconv.c; sourceTree = "<group>"; };
+		72220DE51C4CFD14007C4B53 /* fpconv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fpconv.h; sourceTree = "<group>"; };
+		72220DE61C4CFD14007C4B53 /* lua_cjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_cjson.c; sourceTree = "<group>"; };
+		72220DE71C4CFD14007C4B53 /* lua_cjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_cjson.h; sourceTree = "<group>"; };
+		72220DE81C4CFD14007C4B53 /* strbuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strbuf.c; sourceTree = "<group>"; };
+		72220DE91C4CFD14007C4B53 /* strbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strbuf.h; sourceTree = "<group>"; };
+		72220DEB1C4CFD14007C4B53 /* debugger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debugger.c; sourceTree = "<group>"; };
+		72220DEC1C4CFD14007C4B53 /* debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = debugger.h; sourceTree = "<group>"; };
+		72220DED1C4CFD14007C4B53 /* ldt_debugger.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ldt_debugger.lua; sourceTree = "<group>"; };
+		72220DEF1C4CFD14007C4B53 /* lfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lfs.c; sourceTree = "<group>"; };
+		72220DF01C4CFD14007C4B53 /* lfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfs.h; sourceTree = "<group>"; };
+		72220DF21C4CFD14007C4B53 /* lpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpack.c; sourceTree = "<group>"; };
+		72220DF31C4CFD14007C4B53 /* lpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpack.h; sourceTree = "<group>"; };
+		72220DF51C4CFD14007C4B53 /* lsqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lsqlite3.c; sourceTree = "<group>"; };
+		72220DF61C4CFD14007C4B53 /* lsqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lsqlite3.h; sourceTree = "<group>"; };
+		72220DF71C4CFD14007C4B53 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		72220DF81C4CFD14007C4B53 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		72220DF91C4CFD14007C4B53 /* lua_extensions_more.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_extensions_more.c; sourceTree = "<group>"; };
+		72220DFA1C4CFD14007C4B53 /* lua_extensions_more.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_extensions_more.h; sourceTree = "<group>"; };
+		72220DFC1C4CFD14007C4B53 /* lua_zlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_zlib.c; sourceTree = "<group>"; };
+		72220DFD1C4CFD14007C4B53 /* lua_zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_zlib.h; sourceTree = "<group>"; };
 		9FA3AE4D1BE9BCC900FC9645 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		9FC7603F1A67791200D1E6E7 /* CodeIDESupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeIDESupport.h; sourceTree = "<group>"; };
 		9FC760401A67791200D1E6E7 /* lang */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lang; sourceTree = "<group>"; };
@@ -305,6 +465,7 @@
 			children = (
 				15A8A4171834BDA200142BE0 /* libcocos2d Mac.a */,
 				15A8A4251834BDA200142BE0 /* libcocos2d iOS.a */,
+				72220E731C4CFD15007C4B53 /* libcocos2d tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,6 +527,320 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		72220D0A1C4CFD14007C4B53 /* quick-src */ = {
+			isa = PBXGroup;
+			children = (
+				72220D0B1C4CFD14007C4B53 /* extra */,
+				72220DE11C4CFD14007C4B53 /* lua_extensions */,
+			);
+			name = "quick-src";
+			path = "../../cocos2d-x/quick/lib/quick-src";
+			sourceTree = "<group>";
+		};
+		72220D0B1C4CFD14007C4B53 /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				72220D0D1C4CFD14007C4B53 /* apptools */,
+				72220D101C4CFD14007C4B53 /* cocos2dx_extra.h */,
+				72220D111C4CFD14007C4B53 /* crypto */,
+				72220D7E1C4CFD14007C4B53 /* luabinding */,
+				72220D901C4CFD14007C4B53 /* nanovg */,
+				72220D9E1C4CFD14007C4B53 /* native */,
+				72220DA11C4CFD14007C4B53 /* network */,
+				72220DA71C4CFD14007C4B53 /* platform */,
+				72220DD81C4CFD14007C4B53 /* store */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		72220D0D1C4CFD14007C4B53 /* apptools */ = {
+			isa = PBXGroup;
+			children = (
+				72220D0E1C4CFD14007C4B53 /* HelperFunc.cpp */,
+				72220D0F1C4CFD14007C4B53 /* HelperFunc.h */,
+			);
+			path = apptools;
+			sourceTree = "<group>";
+		};
+		72220D111C4CFD14007C4B53 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				72220D121C4CFD14007C4B53 /* base64 */,
+				72220D151C4CFD14007C4B53 /* CCCrypto.cpp */,
+				72220D161C4CFD14007C4B53 /* CCCrypto.h */,
+				72220D171C4CFD14007C4B53 /* md5 */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		72220D121C4CFD14007C4B53 /* base64 */ = {
+			isa = PBXGroup;
+			children = (
+				72220D131C4CFD14007C4B53 /* libbase64.c */,
+				72220D141C4CFD14007C4B53 /* libbase64.h */,
+			);
+			path = base64;
+			sourceTree = "<group>";
+		};
+		72220D171C4CFD14007C4B53 /* md5 */ = {
+			isa = PBXGroup;
+			children = (
+				72220D181C4CFD14007C4B53 /* md5.c */,
+				72220D191C4CFD14007C4B53 /* md5.h */,
+			);
+			path = md5;
+			sourceTree = "<group>";
+		};
+		72220D7E1C4CFD14007C4B53 /* luabinding */ = {
+			isa = PBXGroup;
+			children = (
+				72220D811C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.cpp */,
+				72220D821C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.h */,
+				72220D831C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.tolua */,
+				72220D841C4CFD14007C4B53 /* cocos2dx_extra_luabinding.cpp */,
+				72220D851C4CFD14007C4B53 /* cocos2dx_extra_luabinding.h */,
+				72220D861C4CFD14007C4B53 /* cocos2dx_extra_luabinding.tolua */,
+				72220D871C4CFD14007C4B53 /* HelperFunc_luabinding.cpp */,
+				72220D881C4CFD14007C4B53 /* HelperFunc_luabinding.h */,
+				72220D891C4CFD14007C4B53 /* HelperFunc_luabinding.tolua */,
+				72220D8C1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_auto.cpp */,
+				72220D8D1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_auto.hpp */,
+				72220D8E1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_manual.cpp */,
+				72220D8F1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_manual.hpp */,
+			);
+			path = luabinding;
+			sourceTree = "<group>";
+		};
+		72220D901C4CFD14007C4B53 /* nanovg */ = {
+			isa = PBXGroup;
+			children = (
+				72220D911C4CFD14007C4B53 /* nanonode */,
+				72220D961C4CFD14007C4B53 /* nanovg */,
+			);
+			path = nanovg;
+			sourceTree = "<group>";
+		};
+		72220D911C4CFD14007C4B53 /* nanonode */ = {
+			isa = PBXGroup;
+			children = (
+				72220D921C4CFD14007C4B53 /* NVGDrawNode.cpp */,
+				72220D931C4CFD14007C4B53 /* NVGDrawNode.h */,
+				72220D941C4CFD14007C4B53 /* NVGNode.cpp */,
+				72220D951C4CFD14007C4B53 /* NVGNode.h */,
+			);
+			path = nanonode;
+			sourceTree = "<group>";
+		};
+		72220D961C4CFD14007C4B53 /* nanovg */ = {
+			isa = PBXGroup;
+			children = (
+				72220D971C4CFD14007C4B53 /* fontstash.h */,
+				72220D981C4CFD14007C4B53 /* nanovg.c */,
+				72220D991C4CFD14007C4B53 /* nanovg.h */,
+				72220D9A1C4CFD14007C4B53 /* nanovg_gl.h */,
+				72220D9B1C4CFD14007C4B53 /* nanovg_gl_utils.h */,
+				72220D9C1C4CFD14007C4B53 /* stb_image.h */,
+				72220D9D1C4CFD14007C4B53 /* stb_truetype.h */,
+			);
+			path = nanovg;
+			sourceTree = "<group>";
+		};
+		72220D9E1C4CFD14007C4B53 /* native */ = {
+			isa = PBXGroup;
+			children = (
+				72220D9F1C4CFD14007C4B53 /* CCAlertViewDelegate.h */,
+				72220DA01C4CFD14007C4B53 /* CCNative.h */,
+			);
+			path = native;
+			sourceTree = "<group>";
+		};
+		72220DA11C4CFD14007C4B53 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				72220DA21C4CFD14007C4B53 /* CCHTTPRequest.cpp */,
+				72220DA31C4CFD14007C4B53 /* CCHTTPRequest.h */,
+				72220DA41C4CFD14007C4B53 /* CCHTTPRequestDelegate.h */,
+				72220DA51C4CFD14007C4B53 /* CCNetwork.cpp */,
+				72220DA61C4CFD14007C4B53 /* CCNetwork.h */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		72220DA71C4CFD14007C4B53 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				72220DAD1C4CFD14007C4B53 /* ios */,
+				72220DC41C4CFD14007C4B53 /* ios_mac */,
+				72220DC81C4CFD14007C4B53 /* mac */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		72220DAD1C4CFD14007C4B53 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				72220DAE1C4CFD14007C4B53 /* CCCryptoIOS.mm */,
+				72220DAF1C4CFD14007C4B53 /* CCNative.mm */,
+				72220DB01C4CFD14007C4B53 /* CCNativeIOS.h */,
+				72220DB11C4CFD14007C4B53 /* CCNativeIOS.mm */,
+				72220DB21C4CFD14007C4B53 /* CCStore.mm */,
+				72220DB31C4CFD14007C4B53 /* CCStoreIOS.h */,
+				72220DB41C4CFD14007C4B53 /* CCStoreIOS.mm */,
+				72220DB51C4CFD14007C4B53 /* CCStorePaymentTransactionWrapper.mm */,
+				72220DB61C4CFD14007C4B53 /* CCStoreReceiptVerifyRequestIOS.h */,
+				72220DB71C4CFD14007C4B53 /* CCStoreReceiptVerifyRequestIOS.mm */,
+				72220DB81C4CFD14007C4B53 /* json */,
+				72220DC11C4CFD14007C4B53 /* openudid */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		72220DB81C4CFD14007C4B53 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				72220DB91C4CFD14007C4B53 /* SBJSON.h */,
+				72220DBA1C4CFD14007C4B53 /* SBJSON.m */,
+				72220DBB1C4CFD14007C4B53 /* SBJsonBase.h */,
+				72220DBC1C4CFD14007C4B53 /* SBJsonBase.m */,
+				72220DBD1C4CFD14007C4B53 /* SBJsonParser.h */,
+				72220DBE1C4CFD14007C4B53 /* SBJsonParser.m */,
+				72220DBF1C4CFD14007C4B53 /* SBJsonWriter.h */,
+				72220DC01C4CFD14007C4B53 /* SBJsonWriter.m */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		72220DC11C4CFD14007C4B53 /* openudid */ = {
+			isa = PBXGroup;
+			children = (
+				72220DC21C4CFD14007C4B53 /* OpenUDIDIOS.h */,
+				72220DC31C4CFD14007C4B53 /* OpenUDIDIOS.m */,
+			);
+			path = openudid;
+			sourceTree = "<group>";
+		};
+		72220DC41C4CFD14007C4B53 /* ios_mac */ = {
+			isa = PBXGroup;
+			children = (
+				72220DC51C4CFD14007C4B53 /* CCNetworkIOSMac.mm */,
+				72220DC61C4CFD14007C4B53 /* ReachabilityIOSMac.h */,
+				72220DC71C4CFD14007C4B53 /* ReachabilityIOSMac.m */,
+			);
+			path = ios_mac;
+			sourceTree = "<group>";
+		};
+		72220DC81C4CFD14007C4B53 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				72220DC91C4CFD14007C4B53 /* CCCryptoMac.mm */,
+				72220DCA1C4CFD14007C4B53 /* CCNative.mm */,
+				72220DCB1C4CFD14007C4B53 /* CCNativeMac.h */,
+				72220DCC1C4CFD14007C4B53 /* CCNativeMac.mm */,
+				72220DCD1C4CFD14007C4B53 /* openudid */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		72220DCD1C4CFD14007C4B53 /* openudid */ = {
+			isa = PBXGroup;
+			children = (
+				72220DCE1C4CFD14007C4B53 /* OpenUDIDMac.h */,
+				72220DCF1C4CFD14007C4B53 /* OpenUDIDMac.m */,
+			);
+			path = openudid;
+			sourceTree = "<group>";
+		};
+		72220DD81C4CFD14007C4B53 /* store */ = {
+			isa = PBXGroup;
+			children = (
+				72220DD91C4CFD14007C4B53 /* CCStore.h */,
+				72220DDA1C4CFD14007C4B53 /* CCStorePaymentTransaction.cpp */,
+				72220DDB1C4CFD14007C4B53 /* CCStorePaymentTransaction.h */,
+				72220DDC1C4CFD14007C4B53 /* CCStorePaymentTransactionWrapper.h */,
+				72220DDD1C4CFD14007C4B53 /* CCStoreProduct.cpp */,
+				72220DDE1C4CFD14007C4B53 /* CCStoreProduct.h */,
+				72220DDF1C4CFD14007C4B53 /* CCStoreProductsRequestDelegate.h */,
+				72220DE01C4CFD14007C4B53 /* CCStoreTransactionObserver.h */,
+			);
+			path = store;
+			sourceTree = "<group>";
+		};
+		72220DE11C4CFD14007C4B53 /* lua_extensions */ = {
+			isa = PBXGroup;
+			children = (
+				72220DE31C4CFD14007C4B53 /* cjson */,
+				72220DEA1C4CFD14007C4B53 /* debugger */,
+				72220DEE1C4CFD14007C4B53 /* filesystem */,
+				72220DF11C4CFD14007C4B53 /* lpack */,
+				72220DF41C4CFD14007C4B53 /* lsqlite3 */,
+				72220DF91C4CFD14007C4B53 /* lua_extensions_more.c */,
+				72220DFA1C4CFD14007C4B53 /* lua_extensions_more.h */,
+				72220DFB1C4CFD14007C4B53 /* zlib */,
+			);
+			path = lua_extensions;
+			sourceTree = "<group>";
+		};
+		72220DE31C4CFD14007C4B53 /* cjson */ = {
+			isa = PBXGroup;
+			children = (
+				72220DE41C4CFD14007C4B53 /* fpconv.c */,
+				72220DE51C4CFD14007C4B53 /* fpconv.h */,
+				72220DE61C4CFD14007C4B53 /* lua_cjson.c */,
+				72220DE71C4CFD14007C4B53 /* lua_cjson.h */,
+				72220DE81C4CFD14007C4B53 /* strbuf.c */,
+				72220DE91C4CFD14007C4B53 /* strbuf.h */,
+			);
+			path = cjson;
+			sourceTree = "<group>";
+		};
+		72220DEA1C4CFD14007C4B53 /* debugger */ = {
+			isa = PBXGroup;
+			children = (
+				72220DEB1C4CFD14007C4B53 /* debugger.c */,
+				72220DEC1C4CFD14007C4B53 /* debugger.h */,
+				72220DED1C4CFD14007C4B53 /* ldt_debugger.lua */,
+			);
+			path = debugger;
+			sourceTree = "<group>";
+		};
+		72220DEE1C4CFD14007C4B53 /* filesystem */ = {
+			isa = PBXGroup;
+			children = (
+				72220DEF1C4CFD14007C4B53 /* lfs.c */,
+				72220DF01C4CFD14007C4B53 /* lfs.h */,
+			);
+			path = filesystem;
+			sourceTree = "<group>";
+		};
+		72220DF11C4CFD14007C4B53 /* lpack */ = {
+			isa = PBXGroup;
+			children = (
+				72220DF21C4CFD14007C4B53 /* lpack.c */,
+				72220DF31C4CFD14007C4B53 /* lpack.h */,
+			);
+			path = lpack;
+			sourceTree = "<group>";
+		};
+		72220DF41C4CFD14007C4B53 /* lsqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				72220DF51C4CFD14007C4B53 /* lsqlite3.c */,
+				72220DF61C4CFD14007C4B53 /* lsqlite3.h */,
+				72220DF71C4CFD14007C4B53 /* sqlite3.c */,
+				72220DF81C4CFD14007C4B53 /* sqlite3.h */,
+			);
+			path = lsqlite3;
+			sourceTree = "<group>";
+		};
+		72220DFB1C4CFD14007C4B53 /* zlib */ = {
+			isa = PBXGroup;
+			children = (
+				72220DFC1C4CFD14007C4B53 /* lua_zlib.c */,
+				72220DFD1C4CFD14007C4B53 /* lua_zlib.h */,
+			);
+			path = zlib;
+			sourceTree = "<group>";
+		};
 		9FC7603E1A67791200D1E6E7 /* ide-support */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +871,7 @@
 			children = (
 				15427CC2198F220600DC375D /* libluacocos2d Mac.a */,
 				15427CD2198F220600DC375D /* libluacocos2d iOS.a */,
+				72220E761C4CFD15007C4B53 /* libluacocos2d tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -457,6 +933,7 @@
 		F293BB7C15EB830F00256477 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				72220D0A1C4CFD14007C4B53 /* quick-src */,
 				9FC7603E1A67791200D1E6E7 /* ide-support */,
 				15427CE2198F237300DC375D /* lua_module_register.h */,
 				F293BB7E15EB831F00256477 /* AppDelegate.cpp */,
@@ -592,6 +1069,20 @@
 			remoteRef = 15A8A4241834BDA200142BE0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		72220E731C4CFD15007C4B53 /* libcocos2d tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d tvOS.a";
+			remoteRef = 72220E721C4CFD15007C4B53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		72220E761C4CFD15007C4B53 /* libluacocos2d tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libluacocos2d tvOS.a";
+			remoteRef = 72220E751C4CFD15007C4B53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		9FF5047E1A5E86D600AFDA55 /* libsimulator Mac.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -632,12 +1123,15 @@
 				5091733B17ECE17A00D62437 /* Icon-100.png in Resources */,
 				5023811B17EBBCAC00990C9B /* Default@2x.png in Resources */,
 				5091733617ECE17A00D62437 /* Icon-29.png in Resources */,
+				72220E3C1C4CFD14007C4B53 /* HelperFunc_luabinding.tolua in Resources */,
 				5023811917EBBCAC00990C9B /* Default-568h@2x.png in Resources */,
 				5091733917ECE17A00D62437 /* Icon-58.png in Resources */,
+				72220E3A1C4CFD14007C4B53 /* cocos2dx_extra_luabinding.tolua in Resources */,
 				5023811F17EBBCAC00990C9B /* Icon-152.png in Resources */,
 				5023812017EBBCAC00990C9B /* Icon-57.png in Resources */,
 				521A8E7019F0C3D200D177D7 /* Default-667h@2x.png in Resources */,
 				C03781B918BF655400FE4F13 /* res in Resources */,
+				72220E671C4CFD14007C4B53 /* ldt_debugger.lua in Resources */,
 				5023812217EBBCAC00990C9B /* Icon-76.png in Resources */,
 				5091733A17ECE17A00D62437 /* Icon-80.png in Resources */,
 				5091733717ECE17A00D62437 /* Icon-40.png in Resources */,
@@ -647,6 +1141,7 @@
 				5091733817ECE17A00D62437 /* Icon-50.png in Resources */,
 				5023812117EBBCAC00990C9B /* Icon-72.png in Resources */,
 				C05D1C121923449100B808A4 /* config.json in Resources */,
+				72220E381C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.tolua in Resources */,
 				521A8E7119F0C3D200D177D7 /* Default-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -687,13 +1182,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72220E501C4CFD14007C4B53 /* SBJSON.m in Sources */,
+				72220E441C4CFD14007C4B53 /* CCNetwork.cpp in Sources */,
+				72220E431C4CFD14007C4B53 /* CCHTTPRequest.cpp in Sources */,
+				72220E6D1C4CFD14007C4B53 /* lua_zlib.c in Sources */,
+				72220E061C4CFD14007C4B53 /* md5.c in Sources */,
+				72220E051C4CFD14007C4B53 /* CCCrypto.cpp in Sources */,
+				72220E421C4CFD14007C4B53 /* nanovg.c in Sources */,
+				72220E4F1C4CFD14007C4B53 /* CCStoreReceiptVerifyRequestIOS.mm in Sources */,
+				72220E531C4CFD14007C4B53 /* SBJsonWriter.m in Sources */,
+				72220E3B1C4CFD14007C4B53 /* HelperFunc_luabinding.cpp in Sources */,
+				72220E581C4CFD14007C4B53 /* CCNative.mm in Sources */,
+				72220E541C4CFD14007C4B53 /* OpenUDIDIOS.m in Sources */,
+				72220E611C4CFD14007C4B53 /* CCStoreProduct.cpp in Sources */,
+				72220E601C4CFD14007C4B53 /* CCStorePaymentTransaction.cpp in Sources */,
+				72220E651C4CFD14007C4B53 /* strbuf.c in Sources */,
 				9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */,
+				72220E6C1C4CFD14007C4B53 /* lua_extensions_more.c in Sources */,
+				72220E4C1C4CFD14007C4B53 /* CCStore.mm in Sources */,
 				5023812517EBBCAC00990C9B /* RootViewController.mm in Sources */,
 				F293BB9C15EB831F00256477 /* AppDelegate.cpp in Sources */,
+				72220E521C4CFD14007C4B53 /* SBJsonParser.m in Sources */,
+				72220E041C4CFD14007C4B53 /* libbase64.c in Sources */,
+				72220E561C4CFD14007C4B53 /* ReachabilityIOSMac.m in Sources */,
+				72220E031C4CFD14007C4B53 /* HelperFunc.cpp in Sources */,
+				72220E4D1C4CFD14007C4B53 /* CCStoreIOS.mm in Sources */,
+				72220E6B1C4CFD14007C4B53 /* sqlite3.c in Sources */,
+				72220E401C4CFD14007C4B53 /* NVGDrawNode.cpp in Sources */,
+				72220E511C4CFD14007C4B53 /* SBJsonBase.m in Sources */,
+				72220E6A1C4CFD14007C4B53 /* lsqlite3.c in Sources */,
+				72220E631C4CFD14007C4B53 /* fpconv.c in Sources */,
+				72220E641C4CFD14007C4B53 /* lua_cjson.c in Sources */,
 				9FFE009F1ACCF59E00D6E35A /* lua_debugger.c in Sources */,
 				5023812417EBBCAC00990C9B /* main.m in Sources */,
+				72220E4A1C4CFD14007C4B53 /* CCNative.mm in Sources */,
+				72220E3E1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_auto.cpp in Sources */,
+				72220E3F1C4CFD14007C4B53 /* lua_cocos2dx_extension_nanovg_manual.cpp in Sources */,
+				72220E391C4CFD14007C4B53 /* cocos2dx_extra_luabinding.cpp in Sources */,
+				72220E4B1C4CFD14007C4B53 /* CCNativeIOS.mm in Sources */,
 				9FFE00A11ACCF59E00D6E35A /* RuntimeLuaImpl.cpp in Sources */,
+				72220E411C4CFD14007C4B53 /* NVGNode.cpp in Sources */,
+				72220E691C4CFD14007C4B53 /* lpack.c in Sources */,
+				72220E5A1C4CFD14007C4B53 /* OpenUDIDMac.m in Sources */,
+				72220E551C4CFD14007C4B53 /* CCNetworkIOSMac.mm in Sources */,
+				72220E4E1C4CFD14007C4B53 /* CCStorePaymentTransactionWrapper.mm in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
+				72220E491C4CFD14007C4B53 /* CCCryptoIOS.mm in Sources */,
+				72220E591C4CFD14007C4B53 /* CCNativeMac.mm in Sources */,
+				72220E661C4CFD14007C4B53 /* debugger.c in Sources */,
+				72220E371C4CFD14007C4B53 /* cocos2dx_extra_ios_iap_luabinding.cpp in Sources */,
+				72220E571C4CFD14007C4B53 /* CCCryptoMac.mm in Sources */,
+				72220E681C4CFD14007C4B53 /* lfs.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
