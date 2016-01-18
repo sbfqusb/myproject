@@ -13,13 +13,17 @@ LOCAL_SRC_FILES := \
 ../../Classes/ide-support/lua_debugger.c \
 hellolua/main.cpp
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
+$(LOCAL_PATH)/../../../cocos2d-x/quick/lib/quick-src \
+$(LOCAL_PATH)/../../../cocos2d-x/quick/lib/quick-src/extra 
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
 
 LOCAL_STATIC_LIBRARIES := cocos2d_lua_static
 LOCAL_STATIC_LIBRARIES += cocos2d_simulator_static
+LOCAL_STATIC_LIBRARIES := lua_extensions_static
+LOCAL_STATIC_LIBRARIES += extra_static
 
 # _COCOS_LIB_ANDROID_BEGIN
 # _COCOS_LIB_ANDROID_END
@@ -27,6 +31,8 @@ LOCAL_STATIC_LIBRARIES += cocos2d_simulator_static
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,scripting/lua-bindings/proj.android)
+$(call import-module,quick/lib/quick-src/lua_extensions)
+$(call import-module,quick/lib/quick-src/extra)
 $(call import-module,tools/simulator/libsimulator/proj.android)
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
