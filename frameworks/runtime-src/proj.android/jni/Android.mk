@@ -22,7 +22,7 @@ $(LOCAL_PATH)/../../../cocos2d-x/quick/lib/quick-src/extra
 
 LOCAL_STATIC_LIBRARIES := cocos2d_lua_static
 LOCAL_STATIC_LIBRARIES += cocos2d_simulator_static
-LOCAL_STATIC_LIBRARIES := lua_extensions_static
+LOCAL_STATIC_LIBRARIES += lua_extensions_static
 LOCAL_STATIC_LIBRARIES += extra_static
 
 # _COCOS_LIB_ANDROID_BEGIN
