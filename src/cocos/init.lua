@@ -63,43 +63,43 @@ require "cocos.cocos2d.DrawPrimitives"
 require "cocos.cocos2d.bitExtend"
 
 -- CCLuaEngine
-require "cocos.cocos2d.DeprecatedCocos2dClass"
-require "cocos.cocos2d.DeprecatedCocos2dEnum"
-require "cocos.cocos2d.DeprecatedCocos2dFunc"
-require "cocos.cocos2d.DeprecatedOpenglEnum"
+-- require "cocos.cocos2d.DeprecatedCocos2dClass"
+-- require "cocos.cocos2d.DeprecatedCocos2dEnum"
+-- require "cocos.cocos2d.DeprecatedCocos2dFunc"
+-- require "cocos.cocos2d.DeprecatedOpenglEnum"
 
 -- register_cocostudio_module
-if nil ~= ccs then
-    require "cocos.cocostudio.DeprecatedCocoStudioClass"
-    require "cocos.cocostudio.DeprecatedCocoStudioFunc"
-end
+-- if nil ~= ccs then
+--     require "cocos.cocostudio.DeprecatedCocoStudioClass"
+--     require "cocos.cocostudio.DeprecatedCocoStudioFunc"
+-- end
 
 
 -- register_cocosbuilder_module
-require "cocos.cocosbuilder.DeprecatedCocosBuilderClass"
+-- require "cocos.cocosbuilder.DeprecatedCocosBuilderClass"
 
--- register_cocosdenshion_module
-require "cocos.cocosdenshion.DeprecatedCocosDenshionClass"
-require "cocos.cocosdenshion.DeprecatedCocosDenshionFunc"
+-- -- register_cocosdenshion_module
+-- require "cocos.cocosdenshion.DeprecatedCocosDenshionClass"
+-- require "cocos.cocosdenshion.DeprecatedCocosDenshionFunc"
 
--- register_extension_module
-require "cocos.extension.DeprecatedExtensionClass"
-require "cocos.extension.DeprecatedExtensionEnum"
-require "cocos.extension.DeprecatedExtensionFunc"
+-- -- register_extension_module
+-- require "cocos.extension.DeprecatedExtensionClass"
+-- require "cocos.extension.DeprecatedExtensionEnum"
+-- require "cocos.extension.DeprecatedExtensionFunc"
 
--- register_network_module
-require "cocos.network.DeprecatedNetworkClass"
-require "cocos.network.DeprecatedNetworkEnum"
-require "cocos.network.DeprecatedNetworkFunc"
+-- -- register_network_module
+-- require "cocos.network.DeprecatedNetworkClass"
+-- require "cocos.network.DeprecatedNetworkEnum"
+-- require "cocos.network.DeprecatedNetworkFunc"
 
--- register_ui_moudle
-if nil ~= ccui then
-    require "cocos.ui.DeprecatedUIEnum"
-    require "cocos.ui.DeprecatedUIFunc"
-end
+-- -- register_ui_moudle
+-- if nil ~= ccui then
+--     require "cocos.ui.DeprecatedUIEnum"
+--     require "cocos.ui.DeprecatedUIFunc"
+-- end
 
 -- cocosbuilder
-require "cocos.cocosbuilder.CCBReaderLoad"
+--require "cocos.cocosbuilder.CCBReaderLoad"
 
 -- physics3d
 require "cocos.physics3d.physics3d-constants"
