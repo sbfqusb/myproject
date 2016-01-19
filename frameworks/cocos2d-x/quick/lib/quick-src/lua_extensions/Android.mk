@@ -36,6 +36,9 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/ \
                     $(LOCAL_PATH)/filesystem \
                     $(LOCAL_PATH)/lpack \
                     $(LOCAL_PATH)/lsqlite3 \
+                    $(LOCAL_PATH)/../../../../external \
+                    $(LOCAL_PATH)/../../../../external/lua/lua \
+                    $(LOCAL_PATH)/../../../../cocos \
                     $(COCOS2DX_ROOT)/cocos \
                     $(COCOS2DX_ROOT)/external/lua/luajit/include
 
