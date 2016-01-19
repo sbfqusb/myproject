@@ -36,6 +36,16 @@ transition = require("cocos.framework.transition")
 network = require("cocos.framework.network")
 crypto = require("cocos.framework.crypto")
 
+if device.platform == "android" then
+    --todo
+    luaj = require("cocos.cocos2d.luaj")
+end
+
+if device.platform == "ios" then
+    --todo
+    luaoc = require("cocos.cocos2d.luaoc")
+end
+
 require("cocos.framework.debug")
 require("cocos.framework.extends.NodeEx")
 require("cocos.framework.extends.SpriteEx")

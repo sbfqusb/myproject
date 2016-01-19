@@ -13,6 +13,9 @@ import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Vibrator;
 import android.telephony.TelephonyManager;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.util.Iterator;
 
 public class PSNative {
 	static Cocos2dxActivity mContext = null;
@@ -48,7 +51,7 @@ public class PSNative {
 	}
 
 	public static void createAlert(final String title, final String message,
-			final Vector<String> buttonTitles, final int listener) {
+			final String jsonString, final int listener) {
 		if (mContext == null) {
 			return;
 		}
@@ -56,6 +59,30 @@ public class PSNative {
 		mContext.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
+				JSONObject jsonObject = null;
+				try {
+					jsonObject = new JSONObject(jsonString);
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				Vector<String> buttonTitles = new Vector<String>();
+			    Iterator<?> iterator = jsonObject.keys();
+			    String key = null;
+			    String value = null;
+			    
+			    while (iterator.hasNext()) {
+
+			        key = (String) iterator.next();
+			        try {
+						value = jsonObject.getString(key);
+					} catch (JSONException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			        buttonTitles.add(value);
+			    }
+
 				mCreatingDialog = new PSDialog(mContext).setCancelable(false)
 						.setMessage(message).setTitle(title)
 						.setLuaListener(listener)
@@ -81,33 +108,33 @@ public class PSNative {
 	/**
 	 * this function will appear thread unsafe problem...
 	 */
-	public static void createAlert(final String title, final String message,
-			final String defalutButtonTitle, final int listener) {
-		if (mContext == null) {
-			return;
-		}
+	// public static void createAlert(final String title, final String message,
+	// 		final String defalutButtonTitle, final int listener) {
+	// 	if (mContext == null) {
+	// 		return;
+	// 	}
 
-		mContext.runOnUiThread(new Runnable() {
-			@Override
-			public void run() {
-				mCreatingDialog = new PSDialog(mContext).setCancelable(false)
-						.setMessage(message).setTitle(title)
-						.setLuaListener(listener)
-						.setListener(mPSDialogListener);
+	// 	mContext.runOnUiThread(new Runnable() {
+	// 		@Override
+	// 		public void run() {
+	// 			mCreatingDialog = new PSDialog(mContext).setCancelable(false)
+	// 					.setMessage(message).setTitle(title)
+	// 					.setLuaListener(listener)
+	// 					.setListener(mPSDialogListener);
 
-				addAlertButton(defalutButtonTitle);
+	// 			addAlertButton(defalutButtonTitle);
 
-				if (mShowingDialog != null && mShowingDialog.isShowing()) {
-					mShowingDialogs.add(mShowingDialog);
-					mShowingDialog.hide();
-				}
+	// 			if (mShowingDialog != null && mShowingDialog.isShowing()) {
+	// 				mShowingDialogs.add(mShowingDialog);
+	// 				mShowingDialog.hide();
+	// 			}
 
-				mCreatingDialog.show();
-				mShowingDialog = mCreatingDialog;
-				mCreatingDialog = null;
-			}
-		});
-	}
+	// 			mCreatingDialog.show();
+	// 			mShowingDialog = mCreatingDialog;
+	// 			mCreatingDialog = null;
+	// 		}
+	// 	});
+	// }
 
 	public static int addAlertButton(final String buttonTitle) {
 		if (mCreatingDialog == null)

@@ -192,12 +192,18 @@ function device.showAlert(title, message, buttonLabels, listener)
     if device.platform == "android" then
         local tempListner = function(event)
             if type(event) == "string" then
-                event = require("framework.json").decode(event)
+                event = require("cocos.cocos2d.json").decode(event)
                 event.buttonIndex = tonumber(event.buttonIndex)
             end
             if listener then listener(event) end
         end
-        luaj.callStaticMethod("org/cocos2dx/utils/PSNative", "createAlert", {title, message, buttonLabels, tempListner}, "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Vector;I)V");
+        local returnTbale = {};
+        for i,v in ipairs(buttonLabels) do
+            returnTbale["btn" .. i] = v;
+        end
+        buttonLabels = require("cocos.cocos2d.json").encode(returnTbale);
+        printInfo("josn:buttonLabels: %s", buttonLabels)
+        luaj.callStaticMethod("org/cocos2dx/utils/PSNative", "createAlert", {title, message, buttonLabels, tempListner}, "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V");
     else
         local defaultLabel = ""
         if #buttonLabels > 0 then
