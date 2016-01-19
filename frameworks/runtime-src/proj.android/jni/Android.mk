@@ -15,7 +15,11 @@ hellolua/main.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
 $(LOCAL_PATH)/../../../cocos2d-x/quick/lib/quick-src \
-$(LOCAL_PATH)/../../../cocos2d-x/quick/lib/quick-src/extra 
+$(LOCAL_PATH)/../../../cocos2d-x/quick/lib/quick-src/extra \
+$(LOCAL_PATH)/../../../cocos2d-x/cocos \
+$(LOCAL_PATH)/../../../cocos2d-x/external \
+$(LOCAL_PATH)/../../../cocos2d-x/external/lua/lua
+
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
