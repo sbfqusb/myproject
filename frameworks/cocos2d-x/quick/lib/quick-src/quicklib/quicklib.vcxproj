@@ -82,7 +82,7 @@
       <CompileAs>CompileAsCpp</CompileAs>
       <ForcedIncludeFiles>algorithm</ForcedIncludeFiles>
       <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_DEPRECATE=1;WIN32;_DEBUG;_LIB;_WINDOWS;_WIN32;COCOS2D_DEBUG;CC_LUA_ENGINE_ENABLED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_DEPRECATE=1;WIN32;_DEBUG;_LIB;_WINDOWS;_WIN32;COCOS2D_DEBUG;CC_LUA_ENGINE_ENABLED;CC_USE_CURL=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

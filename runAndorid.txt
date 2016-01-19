@@ -1,0 +1,2 @@
+cocos run -p android -j 4
+cocos run -p android -m release
