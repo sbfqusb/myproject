@@ -265,6 +265,41 @@ function display.wrapScene(scene, transition, time, more)
     return scene
 end
 
+-- start --
+
+--------------------------------
+-- 切换到新场景
+-- @function [parent=#display] replaceScene
+-- @param Scene newScene 场景对象
+-- @param string transitionType 过渡效果名
+-- @param number time 过渡时间
+-- @param mixed more 过渡效果附加参数
+
+--[[--
+
+切换到新场景
+
+~~~ lua
+
+-- 使用红色做过渡色
+display.replaceScene(nextScene, "fade", 0.5, cc.c3b(255, 0, 0))
+
+~~~
+
+]]
+-- end --
+
+function display.replaceScene(newScene, transitionType, time, more)
+    if director:getRunningScene() then
+        if transitionType then
+            newScene = display.wrapSceneWithTransition(newScene, transitionType, time, more)
+        end
+        director:replaceScene(newScene)
+    else
+        director:runWithScene(newScene)
+    end
+end
+
 function display.runScene(newScene, transition, time, more)
     if director:getRunningScene() then
         if transition then
@@ -536,6 +571,58 @@ end
 function display.removeUnusedSpriteFrames()
     spriteFrameCache:removeUnusedSpriteFrames()
     textureCache:removeUnusedTextures()
+end
+
+-- start --
+
+--------------------------------
+-- 截屏并保存为一个文件
+-- @function [parent=#display] captureScreen
+-- @param function callback 截屏的回调函数
+-- @param string fileName 保存的文件, 绝对路径就直接保存, 只有文件名会保存在writePath下
+
+--[[--
+
+~~~ lua
+
+display.captureScreen(
+    function (bSuc, filePath)
+        --bSuc 截屏是否成功
+        --filePath 文件保存所在的绝对路径
+    end, "screen.png")
+
+~~~
+
+]]
+
+-- end --
+
+function display.captureScreen(callback, fileName)
+    cc.utils:captureScreen(callback, fileName)
+end
+
+-- start --
+
+--------------------------------
+-- 暂停当前场景
+-- @function [parent=#display] pause
+
+-- end --
+
+function display.pause()
+    director:pause()
+end
+
+-- start --
+
+--------------------------------
+-- 恢复当前暂停的场景
+-- @function [parent=#display] resume
+
+-- end --
+
+function display.resume()
+    director:resume()
 end
 
 return display

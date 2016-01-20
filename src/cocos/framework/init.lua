@@ -64,10 +64,11 @@ require("cocos.framework.extends.UISlider")
 require("cocos.framework.extends.UITextField")
 end
 
-require("cocos.framework.package_support")
+require("cocos.framework.cc.init")
+
 
 -- register the build-in packages
-cc.register("event", require("cocos.framework.components.event"))
+-- cc.register("event", require("cocos.framework.components.event"))
 
 -- export global variable
 local __g = _G

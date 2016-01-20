@@ -1,21 +1,17 @@
+--
+-- Author: Your Name
+-- Date: 2016-01-20 14:21:35
+--
+local httptest = class("httptest", function()
+    return display.newNode()
+end)
 
-local MainScene = class("MainScene", cc.load("mvc").ViewBase)
-
-function MainScene:onCreate()
-    -- add background image
-    display.newSprite("HelloWorld.png")
-        :move(display.center)
-        :addTo(self)
-
-    -- add HelloWorld label
-    cc.Label:createWithSystemFont("Hello World", "Arial", 40)
-        :move(display.cx, display.cy + 200)
-        :addTo(self)
-    self:httptest();
+function httptest:ctor()
 end
 
-function MainScene:httptest( ... )
-	-- body
+
+function httptest:test()
+-- body
 	function onRequestFinished(event)
 	    local ok = (event.name == "completed")
 	    local request = event.request
@@ -35,7 +31,6 @@ function MainScene:httptest( ... )
 	 
 	    -- 请求成功，显示服务端返回的内容
 	    local response = request:getResponseString()
-	    print(response)
 	    device.showAlert("网络请求返回", "返回成功", "确定", nil);
 	end
 	 
@@ -45,4 +40,3 @@ function MainScene:httptest( ... )
 	-- 开始请求。当请求完成时会调用 callback() 函数
 	request:start()
 end
-return MainScene
