@@ -12,9 +12,9 @@ eUI =
 
 local UIData = 
 {
-	[eUI.UI_LOGIN] = {UIType = 1,UIName = "登录",Zorder = 0,ClassName = "LoginUI"},
-	[eUI.UI_MAIN] = {UIType = 1,UIName = "主场景",Zorder = 0,ClassName = "MainUI"},
-	[eUI.UI_LEVELSELECTION] = {UIType = 1,UIName = "副本章节选择",Zorder = 0,ClassName = "LevelSelection"},
-	[eUI.UI_DIFFICULTYSELECTION] = {UIType = 1,UIName = "难度选择",Zorder = 0,ClassName = "DifficultySelection"},
+	[eUI.UI_LOGIN] = {UIType = 1,UIName = "登录",Zorder = 0,ClassName = "LoginUI",HideOther = 0,Group = 1},
+	[eUI.UI_MAIN] = {UIType = 1,UIName = "主场景",Zorder = 0,ClassName = "MainUI",HideOther = 0,Group = 1},
+	[eUI.UI_LEVELSELECTION] = {UIType = 1,UIName = "副本章节选择",Zorder = 0,ClassName = "LevelSelection",HideOther = 1,Group = 1},
+	[eUI.UI_DIFFICULTYSELECTION] = {UIType = 1,UIName = "难度选择",Zorder = 0,ClassName = "DifficultySelection",HideOther = 0,Group = 0},
 };
 return UIData;

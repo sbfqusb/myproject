@@ -152,6 +152,8 @@ function GameScene:showUI( type , ... )
 
 	local UiCfg = {cfg = UiCfg,ui = ui}
 	self:onAddUI(UiCfg)
+	self:uiMutex(UiCfg)
+	dump(self.UIShowList, "UIShowList")
 end
 
 function GameScene:getShowUIList( Type )
@@ -164,6 +166,33 @@ function GameScene:getShowUIList( Type )
 		end
 	end
 	return nil;
+end
+
+function GameScene:uiMutex( uiData )
+	-- body
+	if uiData.cfg.Group ==0 then
+		--todo
+		return;
+	end
+	local idx = #self.UIShowList;
+	if idx == 0 or idx == nil then
+		--todo
+		return;
+	end
+	repeat
+		--todo
+		repeat
+			--todo
+			local data = self.UIShowList[idx]
+			if data.ui.WigetType == uiData.ui.WigetType or data.cfg.Group ~= uiData.cfg.Group then
+				--todo
+				break
+			else
+				self:closeUI(data.ui.WigetType)
+			end
+		until true
+		idx = idx -1
+	until idx == 0
 end
 
 return GameScene
