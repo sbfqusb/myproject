@@ -384,16 +384,16 @@ bool GLViewImpl::initWithRect(const std::string& viewName, Rect rect, float fram
     *
     *  see declaration glfwCreateWindow
     */
-    int realW = 0, realH = 0;
-    glfwGetWindowSize(_mainWindow, &realW, &realH);
-    if (realW != needWidth)
-    {
-        rect.size.width = realW / _frameZoomFactor;
-    }
-    if (realH != neeHeight)
-    {
-        rect.size.height = realH / _frameZoomFactor;
-    }
+    //int realW = 0, realH = 0;
+    //glfwGetWindowSize(_mainWindow, &realW, &realH);
+    //if (realW != needWidth)
+    //{
+    //    rect.size.width = realW / _frameZoomFactor;
+    //}
+    //if (realH != neeHeight)
+    //{
+    //    rect.size.height = realH / _frameZoomFactor;
+    //}
 
     glfwMakeContextCurrent(_mainWindow);
 

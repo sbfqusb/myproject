@@ -21,6 +21,10 @@ local writablePath = cc.FileUtils:getInstance():getWritablePath() .. "upd/"
 GameResPath ={--游戏加载的路径
 	"src/",
 	"res/",
+	"res/test",
+	"res/test/MainScene",
+	"res/test/LevelSelection",
+	"res/test/DifficultySelection",
 };
 
 function AddSearchPath( ... )

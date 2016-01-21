@@ -625,4 +625,8 @@ function display.resume()
     director:resume()
 end
 
+if CC_SHOW_FPS then
+    cc.Director:getInstance():setDisplayStats(true)
+end
+    
 return display

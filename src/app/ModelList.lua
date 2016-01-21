@@ -8,7 +8,6 @@ local ModelList =
 	base = 
 	{
 		"app.views.GameUI",
-		"app.views.LoginUI",
 	}
 };
 

@@ -17,6 +17,10 @@ end
 
 function GameUI:addUINode( node )
 	-- body
+	self:addChild(node);
+	local frameSize = cc.Director:getInstance():getVisibleSize();
+	node:setContentSize(frameSize);
+	ccui.Helper:doLayout(node);
 end
 
 function GameUI:removeUINode( node )
@@ -34,6 +38,8 @@ end
 
 function GameUI:onAdd( scene  )
 	-- body
+	printInfo("GameUI:onAdd")
+	printInfo("scene:" .. type(scene));
 	self.scene = scene;
 	--self.scene:addEventListener(WebSockets.OPEN_EVENT, handler(self, self.onOpen))
 end
@@ -55,7 +61,7 @@ end
 function GameUI:close( Type )
 	-- body
 	local closeType = Type or self.WigetType
-	self.scene:closeUI(Type)
+	self.scene:closeUI(closeType)
 end
 
 function GameUI:showUI( Type , ... )
