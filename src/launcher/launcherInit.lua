@@ -327,7 +327,8 @@ end
 --end
 local isFirstStart = cc.UserDefault:getInstance():getStringForKey("isfirst");
 function Launcher.gameDataCollection(index,extra)
-	if device.platform == "windows" then
+	--if device.platform == "windows" then
+    do
         return;
     end
 

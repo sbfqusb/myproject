@@ -38,8 +38,6 @@ end
 
 function GameUI:onAdd( scene  )
 	-- body
-	printInfo("GameUI:onAdd")
-	printInfo("scene:" .. type(scene));
 	self.scene = scene;
 	--self.scene:addEventListener(WebSockets.OPEN_EVENT, handler(self, self.onOpen))
 end

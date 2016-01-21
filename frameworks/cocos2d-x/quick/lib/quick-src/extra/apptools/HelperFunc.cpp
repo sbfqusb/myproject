@@ -11,10 +11,8 @@ USING_NS_CC;
 
 unsigned char* HelperFunc::getFileData(const char* pszFileName, const char* pszMode, unsigned long * pSize)
 {
-    
-	Data data = FileUtils::getInstance()->getDataFromFile(pszFileName);
-    unsigned char* buf = data.getBytes();
-	ssize_t size = data.getSize();
+	ssize_t size;
+	unsigned char* buf = FileUtils::getInstance()->getFileData(pszFileName, pszMode, &size);
     if (NULL==buf || size<1) return NULL;
 
 #ifdef LUASTACK_USED_FOR_QUICK_COCOS2DX
@@ -41,8 +39,8 @@ unsigned char* HelperFunc::getFileData(const char* pszFileName, const char* pszM
                                    (unsigned char*)xxteaKey,
                                    (xxtea_long)xxteaKeyLen,
                                    &len);
-            //delete []buf;
-            //buf = NULL;
+            delete []buf;
+            buf = NULL;
             size = len;
         } else {
             buffer = buf;

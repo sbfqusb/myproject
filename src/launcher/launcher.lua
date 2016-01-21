@@ -2,24 +2,6 @@ package.loaded["launcher.launcherInit"] = nil
 require("launcher.launcherInit")
 
 local function enter_game()
-	-- local ccFileObj = cc.FileUtils:getInstance();
-	-- local SearchPaths = ccFileObj:getSearchPaths();
-	
-	-- local FisrstSearch = {};
-	-- local udpatePath = Launcher.writablePath .. "upd/";
-	-- if ccFileObj:isDirectoryExist(udpatePath ) then
-	-- 	table.insert(FisrstSearch,udpatePath)
-	-- 	for i = 1,#GameResPath do
-	-- 		local path = udpatePath .. GameResPath[i];
-	-- 		if ccFileObj:isDirectoryExist(path) then
-	-- 			table.insert(FisrstSearch,path)
-	-- 		end	
-	-- 	end		
-	-- end	
-	-- SearchPaths = table.connect(FisrstSearch,SearchPaths);
-	-- ccFileObj:setSearchPaths(SearchPaths);
-	--SearchPaths = ccFileObj:getSearchPaths();
-	--dump(SearchPaths,"SearchPaths");
 	AddSearchPath();
 	Launcher.gameDataCollection(2)
 	require "appentry"
@@ -67,32 +49,7 @@ function LauncherScene:ctor()
 	self.Panel_inner_upgrade:setVisible(false);
 	self.Label_game_init:setVisible(true);
 
-	self.NodeEffect = findUIObject(root,"//Node_1" )[1];
-
 	local effectfile = nil;
-	if ISDKM_PACKAGE then
-
-        effectfile = cc.CSLoader:createNode( "login_LoginBaseEffect_ziyin.csb" )
-        self.NodeEffect:addChild(effectfile);
-
-	    local action = cc.CSLoader:createTimeline( "login_LoginBaseEffect_ziyin.csb");
-	    root:runAction(action);
-	    action:gotoFrameAndPlay(0,false);
-
-	    -- local logoImg = findUIObject(effectfile,"//logo" )[1];
-
-	    -- logoImg:loadTexture("ui/login/logo_1.png");
-     --    logoImg:ignoreContentAdaptWithSize(true);
-    else
-    	--todo
-    	effectfile = cc.CSLoader:createNode( "login_LoginBaseEffect.csb" )
-    	self.NodeEffect:addChild(effectfile)
-
-	    local logoImg = findUIObject(effectfile,"//logo" )[1];
-
-	    logoImg:loadTexture("ui/login/logo.png");
-        logoImg:ignoreContentAdaptWithSize(true);    	
-    end
     local frameSize = cc.Director:getInstance():getVisibleSize()
     effectfile:setContentSize(frameSize)
     ccui.Helper:doLayout(effectfile)
