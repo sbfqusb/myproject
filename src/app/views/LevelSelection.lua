@@ -51,4 +51,10 @@ function LevelSelection:onAdd( scene  )
     --         print("Button_1");
     --     end
     -- end);
+    self:registerEvent(EVT.UI_CLOSE,handler(self, self.eventClose));
+end
+
+function LevelSelection:eventClose( ... )
+    -- body
+    dump(..., "desciption, nesting")
 end

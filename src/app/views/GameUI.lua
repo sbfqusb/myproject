@@ -55,6 +55,12 @@ function GameUI:unRegisterEvent( ... )
 	end
 end
 
+function GameUI:dispatchEvent( eventName , ...)
+	-- body
+	local event = {name = eventName,params = ...};
+	self.scene:dispatchEvent(event);
+end
+
 
 function GameUI:close( Type )
 	-- body

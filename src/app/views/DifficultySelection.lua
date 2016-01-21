@@ -13,6 +13,7 @@ end
 function DifficultySelection:onRemove( ... )
 	-- body
 	self.super.onRemove(self,...);
+    self:dispatchEvent(EVT.UI_CLOSE,self.WigetType);
 end
 
 function DifficultySelection:onShow( ... )

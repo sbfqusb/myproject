@@ -8,6 +8,7 @@ local ModelList =
 	base = 
 	{
 		"app.views.GameUI",
+		"app.util.event",
 	}
 };
 

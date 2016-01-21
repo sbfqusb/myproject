@@ -57,6 +57,8 @@ function LoginUI:onAdd( scene  )
         end
     end);
 end
+
+
 function LoginUI:httptest( ... )
 	-- body
 	function onRequestFinished(event)
