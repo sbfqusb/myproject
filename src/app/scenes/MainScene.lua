@@ -6,14 +6,12 @@ function MainScene:ctor()
 end
 
 function MainScene:onEnter()
-	printInfo("MainScene:onEnter")
 	self.super.onEnter(self);
 	
 	self:showUI(eUI.UI_LOGIN)
 end
 
 function MainScene:onExit()
-	printInfo("MainScene:onExit")
 	self.super.onExit(self);
 end
 

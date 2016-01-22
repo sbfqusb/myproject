@@ -9,6 +9,7 @@ local ModelList =
 	{
 		"app.views.GameUI",
 		"app.util.event",
+		"app.util.global",
 	}
 };
 

@@ -37,18 +37,15 @@ function GameScene:ctor()
 end
 
 function GameScene:onEnter()
-	print("GameScene:onEnter")
 end
 
 function GameScene:onExit()
-	print("GameScene:onExit")
 end
 
 function GameScene:onAddUI( uiData )
 	-- body
 	local UIType = uiData.cfg.UIType;
 	local root = uiData.ui;
-	printInfo("onAddUI UIType:" .. UIType)
 	if UIType == eUIScene.Bottom then
 		--todo
 		self.bottomLayer:addChild(root);
@@ -61,10 +58,8 @@ function GameScene:onAddUI( uiData )
 	end
 
 	local uiZorder = uiData.cfg.Zorder;
-	printInfo("onAddUI uiZorder:" .. uiZorder)
 	if uiZorder ~=0  then
 		--todo
-		printInfo("onAddUI uiZorder:" .. uiZorder)
 		root:setLocalZOrder(uiZorder)
 	end
 	
@@ -75,7 +70,6 @@ end
 
 function GameScene:closeUI( type )
 	-- body
-	printInfo("closeUI type:" .. type)
 	local uiData = self:getShowUIList(type);
 	uiData.ui:onRemove();
 	table.removebyvalue(self.UIShowList, uiData);

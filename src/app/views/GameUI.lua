@@ -29,7 +29,7 @@ end
 
 function GameUI:onRemove( ... )
 	-- body
-	self:unRegisterEvent();	
+	self.eventProxy:removeAllEventListeners()
 end
 
 function GameUI:onShow( ... )
@@ -39,20 +39,19 @@ end
 function GameUI:onAdd( scene  )
 	-- body
 	self.scene = scene;
+	self.eventProxy = cc.EventProxy.new(self.scene, self)
 	--self.scene:addEventListener(WebSockets.OPEN_EVENT, handler(self, self.onOpen))
 end
 
 function GameUI:registerEvent( event,func )
 	-- body
-	local handle = self.scene:addEventListener(event, func);
-	table.insert(self.eventHandleList, handle)
+	local obj,handle = self.eventProxy:addEventListener(event,func);
+	return handle
 end
 
-function GameUI:unRegisterEvent( ... )
+function GameUI:unRegisterEventByHandee( handle )
 	-- body
-	for i,v in ipairs(self.eventHandleList) do
-		self.scene:removeEventListener(v);
-	end
+	self.eventProxy:removeEventListener(handle);
 end
 
 function GameUI:dispatchEvent( eventName , ...)

@@ -56,5 +56,6 @@ end
 
 function LevelSelection:eventClose( ... )
     -- body
+    printInfo("LevelSelection:eventClose")
     dump(..., "desciption, nesting")
 end
