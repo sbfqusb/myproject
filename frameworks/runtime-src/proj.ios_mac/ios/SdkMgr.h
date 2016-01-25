@@ -1,8 +1,8 @@
 //
-//  SdkMgr.h
-//  myproject
+//  LaoHuIAPSDKMgr.h
+//  DLDLGAME
 //
-//  Created by DK on 16/1/25.
+//  Created by chenzhi on 15-7-10.
 //
 //
 
@@ -11,10 +11,17 @@
 #include "CCLuaBridge.h"
 #include "platform/ios/CCLuaObjcBridge.h"
 
-//extern int s_platformcallback;
-//extern int s_sdkinit;//0:init 1:success 2:fail
-//extern int loginCallback;
-@interface SdkMgr : NSObject
--(void) _init;
+extern int s_platformcallback;
+extern int s_sdkinit;//0 :init 1:success 2:fail
+extern int loginCallback;
+
+@interface LaoHuIAPSDKMgr : NSObject
+
+
+- (void) _init;
++ (void) login:(NSDictionary*) dict;
++ (void) LoinOut:(NSDictionary*) dict;
++ (void) doPay:(NSDictionary*) dict;
++ (void) initPlatform :(NSDictionary*) dict;
 
 @end
