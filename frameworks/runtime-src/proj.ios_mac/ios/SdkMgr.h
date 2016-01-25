@@ -15,7 +15,7 @@ extern int s_platformcallback;
 extern int s_sdkinit;//0 :init 1:success 2:fail
 extern int loginCallback;
 
-@interface LaoHuIAPSDKMgr : NSObject
+@interface SdkMgr : NSObject
 
 
 - (void) _init;

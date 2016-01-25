@@ -6,9 +6,9 @@
 //
 //
 
-#import "LaoHuIAPSDKMgr.h"
+#import "SdkMgr.h"
 
-@implementation LaoHuIAPSDKMgr
+@implementation SdkMgr
 
 - (void)_init
 {    
@@ -51,8 +51,8 @@
 
 +(void)login:(NSDictionary*) dict
 {
-    loginCallback = [[dict objectForKey:@"listner"] intValue];
-    [[WMUPlatformKit sharedInstance] login];
+//    loginCallback = [[dict objectForKey:@"listner"] intValue];
+//    [[WMUPlatformKit sharedInstance] login];
 //    //test
 //    if (loginCallback > 0) {
 //        cocos2d::LuaBridge::pushLuaFunctionById(loginCallback);
@@ -68,11 +68,11 @@
 
 +(void)LoinOut:(NSDictionary*) dict
 {
-    if ([[[WMUPlatformKit sharedInstance] currentRealPlatform] isLogined]) {
-        
-        [[WMUPlatformKit sharedInstance]logout];
-        return;
-    }
+//    if ([[[WMUPlatformKit sharedInstance] currentRealPlatform] isLogined]) {
+//        
+//        [[WMUPlatformKit sharedInstance]logout];
+//        return;
+//    }
     
 //    //test
 //    if (loginCallback > 0) {
@@ -89,13 +89,13 @@
 
 +(void)doPay:(NSDictionary*) dict
 {
-    if (![[[WMUPlatformKit sharedInstance] currentRealPlatform] isLogined]) {
-        
-        NSLog(@"用户尚未登录");
-        
-        [[WMUPlatformKit sharedInstance] login];
-        return;
-    }
+//    if (![[[WMUPlatformKit sharedInstance] currentRealPlatform] isLogined]) {
+//        
+//        NSLog(@"用户尚未登录");
+//        
+//        [[WMUPlatformKit sharedInstance] login];
+//        return;
+//    }
     
     NSString *productPrice = [dict objectForKey:@"productPrice"];
     
@@ -109,12 +109,12 @@
     NSString *productCount = [dict objectForKey:@"productCount"];
     NSString *roleId = [dict objectForKey:@"roleId"];
     
-     NSLog(@"payment keys %@",[[WMUPlatformKit sharedInstance] needsOfPay]);
-    
-    NSDictionary *payInfo = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:productPrice, uuidString, productName, gameServerId, extInfo, channelServerId, productId, productCount, roleId ,nil]
-                                                        forKeys:[[WMUPlatformKit sharedInstance] needsOfPay]];
-    
-    [[WMUPlatformKit sharedInstance] payWithInfo:payInfo];
+//     NSLog(@"payment keys %@",[[WMUPlatformKit sharedInstance] needsOfPay]);
+//    
+//    NSDictionary *payInfo = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:productPrice, uuidString, productName, gameServerId, extInfo, channelServerId, productId, productCount, roleId ,nil]
+//                                                        forKeys:[[WMUPlatformKit sharedInstance] needsOfPay]];
+//    
+//    [[WMUPlatformKit sharedInstance] payWithInfo:payInfo];
 }
 
 @end

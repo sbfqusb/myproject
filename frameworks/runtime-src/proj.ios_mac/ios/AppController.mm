@@ -30,6 +30,11 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 #import "platform/ios/CCEAGLView-ios.h"
+#import "SdkMgr.h"
+
+int s_platformcallback = 0;
+int s_sdkinit = 0;//0 :init 1:success 2:fail
+int loginCallback = 0;
 
 @implementation AppController
 
@@ -76,6 +81,9 @@ static AppDelegate s_sharedApplication;
         // use this method on ios6
         [window setRootViewController:viewController];
     }
+    
+    SdkMgr *sdkmgr = [[[SdkMgr alloc] init] autorelease];
+    [sdkmgr _init];
     
     [window makeKeyAndVisible];
 
