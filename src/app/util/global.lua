@@ -91,15 +91,6 @@ function playerUIEffect(armature, index, callback)
 	end
 end
 
-function effectMovementEventCallFunc(armature,callback)
-	armature:getAnimation():setMovementEventCallFunc( function ( sender, eventType, name )
-			printInfo("effectMovementEventCallFunc "..eventType)
-			if eventType == ccs.MovementEventType.complete then
-				callback();
-			end				
-		end );
-end
-
 function replaceTextField( obj,isPassword,backImage )
 	-- body
 	if tolua.type(obj) == "ccui.EditBox" then
