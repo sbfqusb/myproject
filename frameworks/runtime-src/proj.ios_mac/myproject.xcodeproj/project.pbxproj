@@ -103,7 +103,8 @@
 		72FCE89E1C4DD1A000CDAB7E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FCE89D1C4DD1A000CDAB7E /* AdSupport.framework */; };
 		72FCE8A01C4DD1B900CDAB7E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FCE89F1C4DD1B900CDAB7E /* SystemConfiguration.framework */; };
 		72FCE8A21C4DD1C700CDAB7E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FCE8A11C4DD1C700CDAB7E /* Security.framework */; };
-		72FCE8B11C55C08300CDAB7E /* SdkMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72FCE8B01C55C08300CDAB7E /* SdkMgr.mm */; };
+		72FCE8B51C55EF2B00CDAB7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FCE8B41C55EF2B00CDAB7E /* QuartzCore.framework */; };
+		72FCE8B81C55EF9000CDAB7E /* SdkMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72FCE8B71C55EF9000CDAB7E /* SdkMgr.mm */; };
 		9FA3AE4E1BE9BCC900FC9645 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA3AE4D1BE9BCC900FC9645 /* CFNetwork.framework */; };
 		9FC760431A67791200D1E6E7 /* lang in Resources */ = {isa = PBXBuildFile; fileRef = 9FC760401A67791200D1E6E7 /* lang */; };
 		9FC760451A677A4A00D1E6E7 /* SimpleConfigParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FC760411A67791200D1E6E7 /* SimpleConfigParser.cpp */; };
@@ -384,8 +385,9 @@
 		72FCE8A11C4DD1C700CDAB7E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		72FCE8A31C4DD1F100CDAB7E /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcommonCrypto.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/usr/lib/system/libcommonCrypto.tbd; sourceTree = DEVELOPER_DIR; };
 		72FCE8A41C4DD1F100CDAB7E /* libcorecrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcorecrypto.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/usr/lib/system/libcorecrypto.tbd; sourceTree = DEVELOPER_DIR; };
-		72FCE8AD1C55C02D00CDAB7E /* SdkMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkMgr.h; sourceTree = "<group>"; };
-		72FCE8B01C55C08300CDAB7E /* SdkMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SdkMgr.mm; sourceTree = "<group>"; };
+		72FCE8B41C55EF2B00CDAB7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		72FCE8B61C55EF9000CDAB7E /* SdkMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkMgr.h; sourceTree = "<group>"; };
+		72FCE8B71C55EF9000CDAB7E /* SdkMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SdkMgr.mm; sourceTree = "<group>"; };
 		9FA3AE4D1BE9BCC900FC9645 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		9FC7603F1A67791200D1E6E7 /* CodeIDESupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeIDESupport.h; sourceTree = "<group>"; };
 		9FC760401A67791200D1E6E7 /* lang */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lang; sourceTree = "<group>"; };
@@ -451,6 +453,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72FCE8B51C55EF2B00CDAB7E /* QuartzCore.framework in Frameworks */,
 				72FCE8A21C4DD1C700CDAB7E /* Security.framework in Frameworks */,
 				72FCE8A01C4DD1B900CDAB7E /* SystemConfiguration.framework in Frameworks */,
 				72FCE89E1C4DD1A000CDAB7E /* AdSupport.framework in Frameworks */,
@@ -498,6 +501,8 @@
 		5023810617EBBCAC00990C9B /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				72FCE8B61C55EF9000CDAB7E /* SdkMgr.h */,
+				72FCE8B71C55EF9000CDAB7E /* SdkMgr.mm */,
 				521A8E6E19F0C3D200D177D7 /* Default-667h@2x.png */,
 				521A8E6F19F0C3D200D177D7 /* Default-736h@3x.png */,
 				5023810717EBBCAC00990C9B /* AppController.h */,
@@ -511,8 +516,6 @@
 				5023811517EBBCAC00990C9B /* Prefix.pch */,
 				5023811617EBBCAC00990C9B /* RootViewController.h */,
 				5023811717EBBCAC00990C9B /* RootViewController.mm */,
-				72FCE8AD1C55C02D00CDAB7E /* SdkMgr.h */,
-				72FCE8B01C55C08300CDAB7E /* SdkMgr.mm */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -908,6 +911,7 @@
 		F293B3CB15EB7BE500256477 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72FCE8B41C55EF2B00CDAB7E /* QuartzCore.framework */,
 				72FCE8A31C4DD1F100CDAB7E /* libcommonCrypto.tbd */,
 				72FCE8A41C4DD1F100CDAB7E /* libcorecrypto.tbd */,
 				72FCE8A11C4DD1C700CDAB7E /* Security.framework */,
@@ -1240,7 +1244,7 @@
 				72220E411C4CFD14007C4B53 /* NVGNode.cpp in Sources */,
 				72220E691C4CFD14007C4B53 /* lpack.c in Sources */,
 				72220E551C4CFD14007C4B53 /* CCNetworkIOSMac.mm in Sources */,
-				72FCE8B11C55C08300CDAB7E /* SdkMgr.mm in Sources */,
+				72FCE8B81C55EF9000CDAB7E /* SdkMgr.mm in Sources */,
 				72220E4E1C4CFD14007C4B53 /* CCStorePaymentTransactionWrapper.mm in Sources */,
 				5023811817EBBCAC00990C9B /* AppController.mm in Sources */,
 				72220E491C4CFD14007C4B53 /* CCCryptoIOS.mm in Sources */,
