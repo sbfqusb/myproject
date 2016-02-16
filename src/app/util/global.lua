@@ -431,8 +431,18 @@ function PlayMusic( index,loop )
 end
 
 function createCircularClippingNode(radius)
+	local maxTrangle = 360;
+	local postab = {};
+	for i=0,maxTrangle-1 do
+		local x = math.cos(i * (math.pi / 180)) * radius;
+		local y = math.sin(i * (math.pi / 180)) * radius;
+		postab[i + 1] = { x = x,y = y};
+	end
+
+	local color = c.c4f(1,0,0,0.5);
 	local draw = cc.DrawNode:create()
-    draw:drawDot(cc.p(0, 0),radius, cc.c4f(0, 1, 0, 1))
+	draw:drawPolygon(postab,360,cc.c4f(1.0,0,0.5),1,cc.c4f(0,0,1,1))
+    --draw:drawDot(cc.p(0, 0),radius, cc.c4f(0, 1, 0, 1))
 	local node = cc.ClippingNode:create(draw);
 	--node:setAlphaThreshold(0.05)
 	return node;

@@ -120,6 +120,7 @@ function GameScene:showUI( type , ... )
 			self:closeUI(v.ui.WigetType)
 		end
 		self.UIShowList[index]:setVisible(true);
+		return;
 	end
 
 	local UiCfg = UIDataList[type];

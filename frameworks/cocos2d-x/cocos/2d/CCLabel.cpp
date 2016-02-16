@@ -1127,6 +1127,7 @@ void Label::disableEffect(LabelEffect effect)
         {
             _shadowEnabled = false;
             CC_SAFE_RELEASE_NULL(_shadowNode);
+			updateShaderProgram();
         }
         break;
     case cocos2d::LabelEffect::GLOW:
