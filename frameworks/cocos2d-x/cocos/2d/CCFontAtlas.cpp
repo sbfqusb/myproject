@@ -321,6 +321,7 @@ bool FontAtlas::prepareLetterDefinitions(const std::u16string& utf16Text)
     int adjustForExtend = _letterEdgeExtend / 2;
     long bitmapWidth;
     long bitmapHeight;
+    int newLineHeight;
     Rect tempRect;
     FontLetterDefinition tempDef;
 
@@ -339,6 +340,12 @@ bool FontAtlas::prepareLetterDefinitions(const std::u16string& utf16Text)
             tempDef.height = tempRect.size.height + _letterPadding + _letterEdgeExtend;
             tempDef.offsetX = tempRect.origin.x + adjustForDistanceMap + adjustForExtend;
             tempDef.offsetY = _fontAscender + tempRect.origin.y - adjustForDistanceMap - adjustForExtend;
+
+            newLineHeight = static_cast<int>(bitmapHeight) + _letterPadding + _letterEdgeExtend;
+            if ( newLineHeight > _currLineHeight )
+            {
+                _currLineHeight = newLineHeight;
+            }
 
             if (bitmapHeight > _currLineHeight)
             {
