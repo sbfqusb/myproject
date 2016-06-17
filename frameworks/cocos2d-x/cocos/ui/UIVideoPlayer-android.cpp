@@ -22,7 +22,7 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-#include "UIVideoPlayer.h"
+#include "ui/UIVideoPlayer.h"
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 #include <unordered_map>
@@ -238,6 +238,18 @@ void VideoPlayer::setVisible(bool visible)
     {
         JniHelper::callStaticVoidMethod(videoHelperClassName, "setVideoVisible", _videoPlayerIndex, visible);
     } 
+}
+
+void VideoPlayer::onEnter()
+{
+    Widget::onEnter();
+    this->setVisible(true);
+}
+
+void VideoPlayer::onExit()
+{
+    Widget::onExit();
+    this->setVisible(false);
 }
 
 void VideoPlayer::addEventListener(const VideoPlayer::ccVideoPlayerCallback& callback)

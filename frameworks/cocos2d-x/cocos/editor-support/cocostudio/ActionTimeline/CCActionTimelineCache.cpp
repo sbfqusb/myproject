@@ -22,22 +22,22 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ****************************************************************************/
 
-#include "CCActionTimelineCache.h"
-#include "CSLoader.h"
-#include "CCFrame.h"
-#include "CCTimeLine.h"
-#include "CCActionTimeline.h"
+#include "editor-support/cocostudio/ActionTimeline/CCActionTimelineCache.h"
+#include "editor-support/cocostudio/ActionTimeline/CSLoader.h"
+#include "editor-support/cocostudio/ActionTimeline/CCFrame.h"
+#include "editor-support/cocostudio/ActionTimeline/CCTimeLine.h"
+#include "editor-support/cocostudio/ActionTimeline/CCActionTimeline.h"
 #include "platform/CCFileUtils.h"
 #include "2d/CCSpriteFrameCache.h"
 #include "2d/CCSpriteFrame.h"
 
-#include "cocostudio/CSParseBinary_generated.h"
+#include "editor-support/cocostudio/CSParseBinary_generated.h"
 
 #include "tinyxml2.h"
 #include "flatbuffers/flatbuffers.h"
 #include "flatbuffers/util.h"
 
-#include "cocostudio/FlatBuffersSerialize.h"
+#include "editor-support/cocostudio/FlatBuffersSerialize.h"
 
 #include <fstream>
 
@@ -160,6 +160,16 @@ ActionTimeline* ActionTimelineCache::createActionFromJson(const std::string& fil
     if (action == nullptr)
     {
         action = loadAnimationActionWithFile(fileName);
+    }
+    return action->clone();
+}
+
+ActionTimeline* ActionTimelineCache::createActionFromContent(const std::string& fileName, const std::string& content)
+{
+    ActionTimeline* action = _animationActions.at(fileName);
+    if (action == nullptr)
+    {
+        action = loadAnimationActionWithContent(fileName, content);
     }
     return action->clone();
 }
@@ -403,13 +413,23 @@ Frame* ActionTimelineCache::loadZOrderFrame(const rapidjson::Value& json)
 
     return frame;
 }
-    
+
 ActionTimeline* ActionTimelineCache::createActionWithFlatBuffersFile(const std::string &fileName)
 {
     ActionTimeline* action = _animationActions.at(fileName);
     if (action == NULL)
     {
         action = loadAnimationActionWithFlatBuffersFile(fileName);
+    }
+    return action->clone();
+}
+
+ActionTimeline* ActionTimelineCache::createActionWithDataBuffer(Data data, const std::string &fileName)
+{
+    ActionTimeline* action = _animationActions.at(fileName);
+    if (action == NULL)
+    {
+        action = loadAnimationWithDataBuffer(data, fileName);
     }
     return action->clone();
 }
@@ -423,7 +443,7 @@ ActionTimeline* ActionTimelineCache::loadAnimationActionWithFlatBuffersFile(cons
     
     std::string path = fileName;
     
-    std::string fullPath = FileUtils::getInstance()->fullPathForFilename(fileName.c_str());
+    std::string fullPath = FileUtils::getInstance()->fullPathForFilename(fileName);
     
     CC_ASSERT(FileUtils::getInstance()->isFileExist(fullPath));
     
@@ -434,7 +454,7 @@ ActionTimeline* ActionTimelineCache::loadAnimationActionWithFlatBuffersFile(cons
     return action;
 }
 
-ActionTimeline* ActionTimelineCache::loadAnimationWithDataBuffer(const cocos2d::Data data, const std::string fileName)
+ActionTimeline* ActionTimelineCache::loadAnimationWithDataBuffer(const cocos2d::Data& data, const std::string& fileName)
 {
     // if already exists an action with filename, then return this action
     ActionTimeline* action = _animationActions.at(fileName);
@@ -443,7 +463,7 @@ ActionTimeline* ActionTimelineCache::loadAnimationWithDataBuffer(const cocos2d::
 
     std::string path = fileName;
 
-    std::string fullPath = FileUtils::getInstance()->fullPathForFilename(fileName.c_str());
+    std::string fullPath = FileUtils::getInstance()->fullPathForFilename(fileName);
 
     CC_ASSERT(FileUtils::getInstance()->isFileExist(fullPath));
 
@@ -453,7 +473,7 @@ ActionTimeline* ActionTimelineCache::loadAnimationWithDataBuffer(const cocos2d::
     return action;
 }
 
-inline ActionTimeline* ActionTimelineCache::createActionWithDataBuffer(const cocos2d::Data data)
+ActionTimeline* ActionTimelineCache::createActionWithDataBuffer(const cocos2d::Data& data)
 {
     auto csparsebinary = GetCSParseBinary(data.getBytes());
 

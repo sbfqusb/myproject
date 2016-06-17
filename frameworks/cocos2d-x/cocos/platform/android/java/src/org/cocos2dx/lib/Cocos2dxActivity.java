@@ -42,11 +42,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
-import com.chukong.cocosplay.client.CocosPlayClient;
-
 import org.cocos2dx.lib.Cocos2dxHelper.Cocos2dxHelperListener;
-import org.cocos2dx.utils.PSNative;
-import org.cocos2dx.utils.PSNetwork;
 
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLConfig;
@@ -260,7 +256,6 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        CocosPlayClient.init(this, false);
 
         onLoadNativeLibraries();
 
@@ -286,9 +281,6 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 
         Window window = this.getWindow();
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
-        
-        PSNative.init(this);
-        PSNetwork.init(this);
     }
 
     //native method,call GLViewImpl::getGLContextAttrs() to get the OpenGL ES context attributions

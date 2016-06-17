@@ -22,7 +22,7 @@
 #include "glfw3.h"
 #include "glfw3native.h"
 
-#include "CCLuaEngine.h"
+#include "scripting/lua-bindings/manual/CCLuaEngine.h"
 #include "AppEvent.h"
 #include "AppLang.h"
 #include "runtime/ConfigParser.h"
