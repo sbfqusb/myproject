@@ -3714,6 +3714,13 @@
 		5E9F612B1A3FFE3D0038DE01 /* CCPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F61241A3FFE3D0038DE01 /* CCPlane.cpp */; };
 		5E9F612C1A3FFE3D0038DE01 /* CCPlane.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E9F61251A3FFE3D0038DE01 /* CCPlane.h */; };
 		5E9F612D1A3FFE3D0038DE01 /* CCPlane.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E9F61251A3FFE3D0038DE01 /* CCPlane.h */; };
+		728598CC1D13CF3B00D5209B /* CSTabControl_generated.h in Headers */ = {isa = PBXBuildFile; fileRef = 728598C91D13CF3B00D5209B /* CSTabControl_generated.h */; };
+		728598CD1D13CF3B00D5209B /* TabControlReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 728598CA1D13CF3B00D5209B /* TabControlReader.cpp */; };
+		728598CE1D13CF3B00D5209B /* TabControlReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 728598CB1D13CF3B00D5209B /* TabControlReader.h */; };
+		728598D11D13CF8A00D5209B /* UITabControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 728598CF1D13CF8A00D5209B /* UITabControl.cpp */; };
+		728598D21D13CF8A00D5209B /* UITabControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 728598D01D13CF8A00D5209B /* UITabControl.h */; };
+		728598D51D13D0AF00D5209B /* LocalizationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 728598D31D13D0AF00D5209B /* LocalizationManager.cpp */; };
+		728598D61D13D0AF00D5209B /* LocalizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 728598D41D13D0AF00D5209B /* LocalizationManager.h */; };
 		826294331AAF001C00CB7CF7 /* HttpAsynConnection-apple.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B47A2A1A5349A3004E4C60 /* HttpAsynConnection-apple.m */; };
 		826294341AAF003E00CB7CF7 /* HttpClient-apple.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52B47A2B1A5349A3004E4C60 /* HttpClient-apple.mm */; };
 		826294351AAF004C00CB7CF7 /* HttpCookie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B47A2C1A5349A3004E4C60 /* HttpCookie.cpp */; };
@@ -6550,6 +6557,13 @@
 		5E9F61231A3FFE3D0038DE01 /* CCFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFrustum.h; sourceTree = "<group>"; };
 		5E9F61241A3FFE3D0038DE01 /* CCPlane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCPlane.cpp; sourceTree = "<group>"; };
 		5E9F61251A3FFE3D0038DE01 /* CCPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPlane.h; sourceTree = "<group>"; };
+		728598C91D13CF3B00D5209B /* CSTabControl_generated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTabControl_generated.h; sourceTree = "<group>"; };
+		728598CA1D13CF3B00D5209B /* TabControlReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TabControlReader.cpp; sourceTree = "<group>"; };
+		728598CB1D13CF3B00D5209B /* TabControlReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabControlReader.h; sourceTree = "<group>"; };
+		728598CF1D13CF8A00D5209B /* UITabControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UITabControl.cpp; sourceTree = "<group>"; };
+		728598D01D13CF8A00D5209B /* UITabControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabControl.h; sourceTree = "<group>"; };
+		728598D31D13D0AF00D5209B /* LocalizationManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocalizationManager.cpp; sourceTree = "<group>"; };
+		728598D41D13D0AF00D5209B /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
 		8525E3A11B291E42008EE815 /* clipper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = clipper.hpp; sourceTree = "<group>"; };
 		85B374381B204B9400C488D6 /* clipper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clipper.cpp; sourceTree = "<group>"; };
 		A045F6D41BA81577005076C7 /* CCTextureCube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCTextureCube.cpp; sourceTree = "<group>"; };
@@ -8343,6 +8357,8 @@
 				382384021A259005002C4610 /* CSParseBinary_generated.h */,
 				182C5CAD1A95961600C30D34 /* CSParse3DBinary_generated.h */,
 				382384051A25900F002C4610 /* FlatBuffersSerialize.cpp */,
+				728598D31D13D0AF00D5209B /* LocalizationManager.cpp */,
+				728598D41D13D0AF00D5209B /* LocalizationManager.h */,
 				382384061A25900F002C4610 /* FlatBuffersSerialize.h */,
 				38ACD1FA1A27111900C3093D /* WidgetCallBackHandlerProtocol.cpp */,
 				38ACD1FB1A27111900C3093D /* WidgetCallBackHandlerProtocol.h */,
@@ -8857,6 +8873,8 @@
 				2905FA0418CF08D000240AA3 /* UIRichText.cpp */,
 				2905FA0518CF08D000240AA3 /* UIRichText.h */,
 				2905FA0718CF08D000240AA3 /* UIScrollView.cpp */,
+				728598CF1D13CF8A00D5209B /* UITabControl.cpp */,
+				728598D01D13CF8A00D5209B /* UITabControl.h */,
 				2905FA0818CF08D000240AA3 /* UIScrollView.h */,
 				B5668D7B1B3838E4003CBD5E /* UIScrollViewBar.cpp */,
 				B5668D7C1B3838E4003CBD5E /* UIScrollViewBar.h */,
@@ -9814,9 +9832,21 @@
 			path = ../external/clipper;
 			sourceTree = "<group>";
 		};
+		728598C81D13CF3B00D5209B /* TabControlReader */ = {
+			isa = PBXGroup;
+			children = (
+				728598C91D13CF3B00D5209B /* CSTabControl_generated.h */,
+				728598CA1D13CF3B00D5209B /* TabControlReader.cpp */,
+				728598CB1D13CF3B00D5209B /* TabControlReader.h */,
+			);
+			name = TabControlReader;
+			path = ../TabControlReader;
+			sourceTree = "<group>";
+		};
 		A045F6EC1BA81821005076C7 /* GameNode3DReader */ = {
 			isa = PBXGroup;
 			children = (
+				728598C81D13CF3B00D5209B /* TabControlReader */,
 				A045F6ED1BA81821005076C7 /* GameNode3DReader.cpp */,
 				A045F6EE1BA81821005076C7 /* GameNode3DReader.h */,
 			);
@@ -12962,6 +12992,7 @@
 				B6CAB53A1AF9AA1A00B9B856 /* cl.h in Headers */,
 				15AE181519AAD2F700C27E9E /* CCAnimationCurve.h in Headers */,
 				B6CAB28C1AF9AA1A00B9B856 /* btCapsuleShape.h in Headers */,
+				728598D21D13CF8A00D5209B /* UITabControl.h in Headers */,
 				B665E4191AA80A6600DDB1C5 /* CCPUTextureAnimatorTranslator.h in Headers */,
 				503DD8EF1926736A00CD74DD /* CCPlatformDefine-ios.h in Headers */,
 				15AE196919AAD35100C27E9E /* CocoStudio.h in Headers */,
@@ -13075,6 +13106,7 @@
 				B6CAB4B41AF9AA1A00B9B856 /* SpuContactManifoldCollisionAlgorithm.h in Headers */,
 				15AE18DB19AAD33D00C27E9E /* CocosBuilder.h in Headers */,
 				A045F6F21BA81821005076C7 /* GameNode3DReader.h in Headers */,
+				728598D61D13D0AF00D5209B /* LocalizationManager.h in Headers */,
 				B6CAB2601AF9AA1A00B9B856 /* btInternalEdgeUtility.h in Headers */,
 				B665E1F51AA80A6500DDB1C5 /* CCPUAffector.h in Headers */,
 				15AE1ACD19AAD40300C27E9E /* b2PrismaticJoint.h in Headers */,
@@ -13198,6 +13230,7 @@
 				85505F0C1B60E3D5003F2CD4 /* CSBoneBinary_generated.h in Headers */,
 				299754F7193EC95400A54AC3 /* ObjectFactory.h in Headers */,
 				15FB20921AE7C57D00C31518 /* advancing_front.h in Headers */,
+				728598CE1D13CF3B00D5209B /* TabControlReader.h in Headers */,
 				50ABBE881925AB6F00A911A9 /* ccMacros.h in Headers */,
 				B665E3991AA80A6500DDB1C5 /* CCPUPointEmitter.h in Headers */,
 				B29A7E4019EE1B7700872B35 /* AnimationState.h in Headers */,
@@ -13938,6 +13971,7 @@
 				B6CAB2CC1AF9AA1A00B9B856 /* btMinkowskiSumShape.h in Headers */,
 				B6CAB3561AF9AA1A00B9B856 /* gim_linear_math.h in Headers */,
 				50ABBEB21925AB6F00A911A9 /* CCUserDefault.h in Headers */,
+				728598CC1D13CF3B00D5209B /* CSTabControl_generated.h in Headers */,
 				15AE198B19AAD36A00C27E9E /* ButtonReader.h in Headers */,
 				B6CAB2FC1AF9AA1A00B9B856 /* btTriangleCallback.h in Headers */,
 				A0534A6B1B87306E006B03E5 /* CCIDownloaderImpl.h in Headers */,
@@ -15721,6 +15755,7 @@
 				B665E38B1AA80A6500DDB1C5 /* CCPUPlane.cpp in Sources */,
 				B665E2731AA80A6500DDB1C5 /* CCPUDoPlacementParticleEventHandler.cpp in Sources */,
 				15AE1C0519AAE01E00C27E9E /* CCTableViewCell.cpp in Sources */,
+				728598D11D13CF8A00D5209B /* UITabControl.cpp in Sources */,
 				B6CAB4D41AF9AA1A00B9B856 /* SpuGatheringCollisionTask.cpp in Sources */,
 				15AE198A19AAD36A00C27E9E /* ButtonReader.cpp in Sources */,
 				15AE18D019AAD33D00C27E9E /* CCNodeLoaderLibrary.cpp in Sources */,
@@ -15785,6 +15820,7 @@
 				B665E4071AA80A6600DDB1C5 /* CCPUSphereSurfaceEmitter.cpp in Sources */,
 				503DD8EE1926736A00CD74DD /* CCImage-ios.mm in Sources */,
 				B6CAB2941AF9AA1A00B9B856 /* btCompoundShape.cpp in Sources */,
+				728598CD1D13CF3B00D5209B /* TabControlReader.cpp in Sources */,
 				B6CAB39A1AF9AA1A00B9B856 /* btVoronoiSimplexSolver.cpp in Sources */,
 				46A170FC1807CECB005B8026 /* CCPhysicsBody.cpp in Sources */,
 				15AE1BEA19AAE01E00C27E9E /* CCControlButton.cpp in Sources */,
@@ -15817,6 +15853,7 @@
 				15AE197B19AAD35700C27E9E /* CCFrame.cpp in Sources */,
 				B29A7E3E19EE1B7700872B35 /* AnimationState.c in Sources */,
 				15AE1ABE19AAD40300C27E9E /* b2PolygonContact.cpp in Sources */,
+				728598D51D13D0AF00D5209B /* LocalizationManager.cpp in Sources */,
 				1A57006E180BC5A10088DEC7 /* CCActionEase.cpp in Sources */,
 				50ABBD8C1925AB4100A911A9 /* CCGLProgram.cpp in Sources */,
 				B665E2671AA80A6500DDB1C5 /* CCPUDoExpireEventHandlerTranslator.cpp in Sources */,
@@ -16790,7 +16827,7 @@
 				OTHER_LDFLAGS = "-llibsql3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/freetype2/include/ios $(SRCROOT)/../external/curl/include/ios $(SRCROOT)/../external/webp/include/ios $(SRCROOT)/../external/tiff/include/ios $(SRCROOT)/../external/jpeg/include/ios $(SRCROOT)/../external/png/include/ios $(SRCROOT)/../external/websockets/include/ios $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external/freetype2/include/ios/freetype2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/freetype2/include/ios $(SRCROOT)/../external/curl/include/ios $(SRCROOT)/../external/webp/include/ios $(SRCROOT)/../external/tiff/include/ios $(SRCROOT)/../external/jpeg/include/ios $(SRCROOT)/../external/png/include/ios $(SRCROOT)/../external/websockets/include/ios $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external/chipmunk/include $(SRCROOT)/../external/freetype2/include/ios/freetype2";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -16824,7 +16861,7 @@
 				OTHER_LDFLAGS = "-llibsql3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/freetype2/include/ios $(SRCROOT)/../external/curl/include/ios $(SRCROOT)/../external/webp/include/ios $(SRCROOT)/../external/tiff/include/ios $(SRCROOT)/../external/jpeg/include/ios $(SRCROOT)/../external/png/include/ios $(SRCROOT)/../external/websockets/include/ios $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external/freetype2/include/ios/freetype2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/freetype2/include/ios $(SRCROOT)/../external/curl/include/ios $(SRCROOT)/../external/webp/include/ios $(SRCROOT)/../external/tiff/include/ios $(SRCROOT)/../external/jpeg/include/ios $(SRCROOT)/../external/png/include/ios $(SRCROOT)/../external/websockets/include/ios $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external/chipmunk/include $(SRCROOT)/../external/freetype2/include/ios/freetype2";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
